@@ -1,0 +1,279 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hea {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4568dc;
+}
+
+.App {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    // border: 1px solid green;
+    margin: 0 auto;
+    max-width: 950px;
+    /* width: 950px; */
+
+    .hr {
+        border: 1px solid #4568dc;
+        margin-top: 0px;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        // border: 1px solid brown;
+
+        .img {
+            max-width: 180px;
+            border-radius: 500px;
+        }
+    }
+
+    .appBody {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        // justify-content: space-evenly;
+        // align-items: center;
+        // border: 1px solid brown;
+    }
+}
+
+.basicInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    color: white;
+    background: #4568dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #8a6ab3,
+        #4568dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #4568dc,
+        #8a6ab3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    a {
+        color: white;
+    }
+
+    .i1 {
+        margin-right: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        text-align: right;
+        .name {
+            font-size: 30px;
+            line-height: 30px;
+            // font-weight: bold;
+        }
+
+        .birth {
+            font-size: 16px;
+        }
+
+        & > div {
+            margin: 8px;
+        }
+    }
+
+    .i2 {
+        .i2child {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .span {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .icon {
+            margin-right: 5px;
+            width: 15px;
+            height: 18px;
+            * {
+                fill: rgb(255, 255, 255);
+            }
+        }
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .location {
+            .locationIcon {
+            }
+        }
+    }
+}
+
+.briefBar {
+    width: 200px;
+    // border: 1px solid rgb(255, 0, 234);
+
+    .skillBox {
+        .skillsHead {
+            // text-align: center;
+            // font-size: 30px;
+            // font-weight: bold;
+            // color: #4568dc;
+        }
+
+        .skillsBody {
+            // text-align: center;
+            .skill {
+                display: inline-block;
+                color: white;
+                padding: 5px;
+                margin: 3px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                background: #4568dc; /* fallback for old browsers */
+                background: -webkit-linear-gradient(
+                    to right,
+                    #8a6ab3,
+                    #4568dc
+                ); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(
+                    to right,
+                    #4568dc,
+                    #8a6ab3
+                ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+        }
+    }
+
+    .langBox {
+        .langHead {
+            margin-top: 15px;
+            // text-align: center;
+            // font-size: 30px;
+            // font-weight: bold;
+            // color: #4568dc;
+        }
+
+        .langBody {
+            .lang {
+                margin-bottom: 15px;
+                .langName {
+                    font-weight: bold;
+                    color: rgb(40, 40, 40);
+                }
+
+                .langStatus {
+                    color: #4568dc;
+                    font-style: italic;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .interestsBox {
+        font-size: 14px;
+        .interestsHead {
+            margin-top: 10px;
+            // text-align: center;
+            // font-size: 30px;
+            // font-weight: bold;
+            // color: #4568dc;
+        }
+
+        .interestsBody {
+            .interest {
+                display: inline-block;
+                padding: 3px;
+                margin-left: 3px;
+                margin-right: 3px;
+                margin-bottom: 7px;
+                border-radius: 5px;
+                border: 2px solid hsl(0, 0%, 70%);
+                // background: #4568dc;
+            }
+        }
+    }
+}
+
+.storyBar {
+    padding-left: 50px;
+
+    .edu {
+        .eduHead {
+        }
+
+        .eduBody {
+        }
+    }
+
+    .bigProjects {
+    }
+
+    .jobs {
+        .jobsHead {
+        }
+
+        .jobsBody {
+        }
+    }
+
+    .miniProjects {
+    }
+}
+
+.nanoItem {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    a {
+        color: rgb(40, 40, 40);
+    }
+
+    .imgBox {
+        .img {
+            width: 50px;
+            margin-right: 10px;
+        }
+    }
+
+    .infoBox {
+        .nanoTitle {
+            font-weight: bold;
+            color: #4568dc;
+        }
+
+        .nanoOrg {
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .nanoTime {
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    }
+}
