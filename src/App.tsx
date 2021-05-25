@@ -1,8 +1,8 @@
 import React from "react";
 
-import mainPhoto from "./images/photo-leo.jpg";
-import gtuCoatOfArms from "./images/gtu.png";
-import ugLogo from "./images/ug.png";
+// import mainPhoto from "./images/photo-leo.jpg";
+// import gtuCoatOfArms from "./images/gtu.png";
+// import ugLogo from "./images/ug.png";
 import lupiLogo from "./images/lupi.png";
 import exactproLogo from "./images/exactpro.png";
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
@@ -158,15 +158,15 @@ const StoryBar = () => {
                 <div className={"eduHead hea"}>EDUCATION</div>
                 <hr className={"hr"} />
                 <div className={"eduBody"}>
-                    <NanoItem
-                        imgSrc={gtuCoatOfArms}
+                    {/* <NanoItem
+                        imgSrc={"gtuCoatOfArms"}
                         title={"Web Technologies (Master's Degree)"}
                         org={"Georgian Technical University (Tbilisi, Georgia)"}
                         orgHref={"https://www.facebook.com/gtu.ge"}
                         time={"10/2019 - Present"}
-                    />
+                    /> */}
 
-                    <NanoItem
+                    {/* <NanoItem
                         imgSrc={ugLogo}
                         title={"Informatics (Bachelor's Degree)"}
                         org={"The University of Georgia (Tbilisi, Georgia)"}
@@ -174,7 +174,7 @@ const StoryBar = () => {
                             "https://www.facebook.com/TheUniversityofGeorgia"
                         }
                         time={"09/2014 - 09/2019"}
-                    />
+                    /> */}
                 </div>
             </div>
             <div className={"bigProjects"}>
@@ -227,7 +227,7 @@ function App() {
     return (
         <div className="App">
             <header className="header">
-                <img className={"img"} src={mainPhoto} alt="main" />
+                {/* <img className={"img"} src={mainPhoto} alt="main" /> */}
                 <BasicInfo />
             </header>
 
