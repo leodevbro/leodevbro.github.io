@@ -155,7 +155,7 @@ const StoryBar = () => {
     return (
         <div className={"storyBar"}>
             <div className={"edu"}>
-                <div className={"eduHead hea"}>EDUCATIONzzzzz</div>
+                <div className={"eduHead hea"}>EDUCATIONzzzz22233z</div>
                 <hr className={"hr"} />
                 <div className={"eduBody"}>
                     {/* <NanoItem
