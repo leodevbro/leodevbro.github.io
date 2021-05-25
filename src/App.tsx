@@ -1,16 +1,25 @@
 import React from "react";
 
-// import mainPhoto from "./images/photo-leo.jpg";
-// import gtuCoatOfArms from "./images/gtu.png";
-// import ugLogo from "./images/ug.png";
-import lupiLogo from "./images/lupi.png";
-import exactproLogo from "./images/exactpro.png";
+import mainPhotoBuildPath from "./images/photo-leo.jpg";
+import gtuCoatOfArmsBuildPath from "./images/gtu.png";
+import ugLogoBuildPath from "./images/ug.png";
+import lupiLogoBuildPath from "./images/lupi.png";
+import exactproLogoBuildPath from "./images/exactpro.png";
+import blockmanIconBuildPath from "./images/blockman-icon.png";
+import musicRankIconBuildPath from "./images/music-rank-logo-draft.png";
+import musicRankSheetsIconBuildPath from "./images/music-rank-sheets.png";
+import emojiIconBuildPath from "./images/emoji.png";
+import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
+import numberSumIconBuildPath from "./images/number-sum.png";
+
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
 import { ReactComponent as MyPhoneIcon } from "./images/phone.svg";
 import { ReactComponent as MyMailIcon } from "./images/mail.svg";
 import { ReactComponent as MyGitIcon } from "./images/git.svg";
 import { ReactComponent as MyLinkedinIcon } from "./images/linkedin.svg";
 import "./App.scss";
+
+console.log("mainPhoto:", mainPhotoBuildPath);
 
 const BasicInfo = () => {
     return (
@@ -129,10 +138,10 @@ const BriefBar = () => {
 const NanoItem: React.FC<{
     imgSrc: string;
     title: string;
-    org: string;
-    orgHref: string;
-    time: string;
-}> = ({ imgSrc, title, org, orgHref, time }) => {
+    info1: string;
+    mainLink: string;
+    info2: string;
+}> = ({ imgSrc, title, info1, mainLink, info2 }) => {
     return (
         <div className={"nanoItem"}>
             <div className={"imgBox"}>
@@ -140,12 +149,12 @@ const NanoItem: React.FC<{
             </div>
             <div className={"infoBox"}>
                 <div className={"nanoTitle"}>{title}</div>
-                <div className={"nanoOrg"}>
-                    <a href={orgHref} target={"_blank"} rel={"noreferrer"}>
-                        {org}
+                <div className={"nanoLinkBox"}>
+                    <a href={mainLink} target={"_blank"} rel={"noreferrer"}>
+                        {info1}
                     </a>
                 </div>
-                <div className={"nanoTime"}>{time}</div>
+                <div className={"nanoInfo2"}>{info2}</div>
             </div>
         </div>
     );
@@ -155,35 +164,47 @@ const StoryBar = () => {
     return (
         <div className={"storyBar"}>
             <div className={"edu"}>
-                <div className={"eduHead hea"}>EDUCATIONzzzz22233z</div>
+                <div className={"eduHead hea"}>EDUCATION</div>
                 <hr className={"hr"} />
                 <div className={"eduBody"}>
-                    {/* <NanoItem
-                        imgSrc={"gtuCoatOfArms"}
+                    <NanoItem
+                        imgSrc={gtuCoatOfArmsBuildPath}
                         title={"Web Technologies (Master's Degree)"}
-                        org={"Georgian Technical University (Tbilisi, Georgia)"}
-                        orgHref={"https://www.facebook.com/gtu.ge"}
-                        time={"10/2019 - Present"}
-                    /> */}
+                        info1={
+                            "Georgian Technical University (Tbilisi, Georgia)"
+                        }
+                        mainLink={"https://www.facebook.com/gtu.ge"}
+                        info2={"10/2019 - Present"}
+                    />
 
-                    {/* <NanoItem
-                        imgSrc={ugLogo}
+                    <NanoItem
+                        imgSrc={ugLogoBuildPath}
                         title={"Informatics (Bachelor's Degree)"}
-                        org={"The University of Georgia (Tbilisi, Georgia)"}
-                        orgHref={
+                        info1={"The University of Georgia (Tbilisi, Georgia)"}
+                        mainLink={
                             "https://www.facebook.com/TheUniversityofGeorgia"
                         }
-                        time={"09/2014 - 09/2019"}
-                    /> */}
+                        info2={"09/2014 - 09/2019"}
+                    />
                 </div>
             </div>
             <div className={"bigProjects"}>
                 <div className={"bpHead hea"}>Personal Large Project(s)</div>
                 <hr className={"hr"} />
                 <div className={"bpBody"}>
-                    <div className={"bpItem"}>11</div>
-                    <div className={"bpItem"}>11</div>
-                    <div className={"bpItem"}>33</div>
+                    <NanoItem
+                        imgSrc={blockmanIconBuildPath}
+                        title={"Blockman"}
+                        info1={
+                            "VSCode Extension To Highlight Nested Code Blocks"
+                        }
+                        mainLink={
+                            "https://github.com/leodevbro/vscode-blockman"
+                        }
+                        info2={
+                            "Really wanted to find such feature in code editors, couldn't find anywhere, so I dedicated about 6 months to create it myself."
+                        }
+                    />
                 </div>
             </div>
             <div className={"jobs"}>
@@ -191,21 +212,21 @@ const StoryBar = () => {
                 <hr className={"hr"} />
                 <div className={"jobsBody"}>
                     <NanoItem
-                        imgSrc={lupiLogo}
+                        imgSrc={lupiLogoBuildPath}
                         title={"Frontend Developer"}
-                        org={"Lupi AI - ლუპი აი (Tbilisi, Georgia)"}
-                        orgHref={"https://www.facebook.com/lupiapp"}
-                        time={"10/2020 - 05/2021"}
+                        info1={"Lupi AI - ლუპი აი (Tbilisi, Georgia)"}
+                        mainLink={"https://www.facebook.com/lupiapp"}
+                        info2={"10/2020 - 05/2021"}
                     />
 
                     <NanoItem
-                        imgSrc={exactproLogo}
+                        imgSrc={exactproLogoBuildPath}
                         title={"Software Tester"}
-                        org={"Exactpro Systems (Tbilisi, Georgia)"}
-                        orgHref={
+                        info1={"Exactpro Systems (Tbilisi, Georgia)"}
+                        mainLink={
                             "https://www.linkedin.com/company/exactpro-systems-llc/"
                         }
-                        time={"02/2020 - 09/2020"}
+                        info2={"02/2020 - 09/2020"}
                     />
                 </div>
             </div>
@@ -214,9 +235,56 @@ const StoryBar = () => {
                 <div className={"mpHead hea"}>Personal Small Projects</div>
                 <hr className={"hr"} />
                 <div className={"mpBody"}>
-                    <div className={"mpItem"}>11</div>
-                    <div className={"mpItem"}>11</div>
-                    <div className={"mpItem"}>33</div>
+                    <NanoItem
+                        imgSrc={ticTacToeIconBuildPath}
+                        title={"Tic-tac-toe game with React.js"}
+                        info1={"Live Demo and Source Code"}
+                        mainLink={"https://codesandbox.io/s/sad-firefly-jbunr"}
+                        info2={"This was a prehire task from Lupi AI."}
+                    />
+                    <NanoItem
+                        imgSrc={musicRankIconBuildPath}
+                        title={"Music Rank Initial Structure with React.js"}
+                        info1={"Live Demo and Source Code"}
+                        mainLink={
+                            "https://codesandbox.io/s/thirsty-butter%EF%AC%82y-u1hvc"
+                        }
+                        info2={
+                            "The idea is from Youtube playlists, but with more freedom."
+                        }
+                    />
+                    <NanoItem
+                        imgSrc={musicRankSheetsIconBuildPath}
+                        title={
+                            "Music Rank using Google Sheets and Google Apps Script"
+                        }
+                        info1={"Video guide"}
+                        mainLink={"https://youtu.be/hOx34e08UbY?t=3m0s"}
+                        info2={
+                            "Google Sheets playground for personal music rank"
+                        }
+                    />
+
+                    <NanoItem
+                        imgSrc={emojiIconBuildPath}
+                        title={"Sento"}
+                        info1={"Live Demo and Source Code"}
+                        mainLink={"https://codesandbox.io/s/purple-dawn-1bycg"}
+                        info2={
+                            "Input text box with emoji GIFs from joypixels.com website."
+                        }
+                    />
+                    <NanoItem
+                        imgSrc={numberSumIconBuildPath}
+                        title={"Number Sum Game with React.js"}
+                        info1={"Live Demo and Source Code"}
+                        mainLink={
+                            "https://codesandbox.io/s/summer-moon-ghyqk?file=/src/components/App.js"
+                        }
+                        info2={
+                            "Input text box with emoji GIFs from joypixels.com website."
+                        }
+                    />
                 </div>
             </div>
         </div>
@@ -227,7 +295,7 @@ function App() {
     return (
         <div className="App">
             <header className="header">
-                {/* <img className={"img"} src={mainPhoto} alt="main" /> */}
+                <img className={"img"} src={mainPhotoBuildPath} alt="main" />
                 <BasicInfo />
             </header>
 
