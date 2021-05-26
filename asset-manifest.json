@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b56d4120.chunk.css",
-    "main.js": "/static/js/main.1c731c56.chunk.js",
-    "main.js.map": "/static/js/main.1c731c56.chunk.js.map",
+    "main.css": "/static/css/main.fe3acb6d.chunk.css",
+    "main.js": "/static/js/main.e0d91f64.chunk.js",
+    "main.js.map": "/static/js/main.e0d91f64.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1f36ed0d.chunk.js": "/static/js/3.1f36ed0d.chunk.js",
     "static/js/3.1f36ed0d.chunk.js.map": "/static/js/3.1f36ed0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b56d4120.chunk.css.map": "/static/css/main.b56d4120.chunk.css.map",
+    "static/css/main.fe3acb6d.chunk.css.map": "/static/css/main.fe3acb6d.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/exactpro.59813642.png": "/static/media/exactpro.59813642.png",
@@ -25,13 +25,14 @@
     "static/media/number-sum.6be82927.png": "/static/media/number-sum.6be82927.png",
     "static/media/phone.ec9734a4.svg": "/static/media/phone.ec9734a4.svg",
     "static/media/photo-leo.385103e0.jpg": "/static/media/photo-leo.385103e0.jpg",
+    "static/media/road-crossing.a05231a8.png": "/static/media/road-crossing.a05231a8.png",
     "static/media/tic-tac-toe.4418a710.png": "/static/media/tic-tac-toe.4418a710.png",
     "static/media/ug.4997f81f.png": "/static/media/ug.4997f81f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
-    "static/css/main.b56d4120.chunk.css",
-    "static/js/main.1c731c56.chunk.js"
+    "static/css/main.fe3acb6d.chunk.css",
+    "static/js/main.e0d91f64.chunk.js"
   ]
 }
