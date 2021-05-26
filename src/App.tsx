@@ -11,6 +11,7 @@ import musicRankSheetsIconBuildPath from "./images/music-rank-sheets.png";
 import emojiIconBuildPath from "./images/emoji.png";
 import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import numberSumIconBuildPath from "./images/number-sum.png";
+import roadCrossingIconBuildPath from "./images/road-crossing.png";
 
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
 import { ReactComponent as MyPhoneIcon } from "./images/phone.svg";
@@ -264,6 +265,17 @@ const StoryBar = () => {
                             "Google Sheets playground for personal music rank"
                         }
                     />
+                    <NanoItem
+                        imgSrc={roadCrossingIconBuildPath}
+                        title={"Road Crossing Math Problem And Solution"}
+                        info1={"Repository link"}
+                        mainLink={
+                            "https://github.com/leodevbro/road-crossing-math-problem"
+                        }
+                        info2={
+                            "I got an idea of creating a math problem when I was crossing the road as a pedestrian, trying to find optimal route to cross the street with minimal risk of car accident."
+                        }
+                    />
 
                     <NanoItem
                         imgSrc={emojiIconBuildPath}
@@ -282,9 +294,45 @@ const StoryBar = () => {
                             "https://codesandbox.io/s/summer-moon-ghyqk?file=/src/components/App.js"
                         }
                         info2={
-                            "Input text box with emoji GIFs from joypixels.com website."
+                            "This was a part of React.js cource of PluralSight."
                         }
                     />
+                </div>
+            </div>
+            <div className={"achievements"}>
+                <div className={"achHead hea"}>Achievements</div>
+                <hr className={"hr"} />
+                <div className={"achBody"}>
+                    <ul>
+                        <li>
+                            <div className="achTitle">
+                                HackerRank Badge: 5 stars in{" "}
+                                <a
+                                    href="https://www.hackerrank.com/leodevbro"
+                                    target={"_blank"}
+                                    rel={"noreferrer"}
+                                >
+                                    Problem Solving
+                                </a>
+                            </div>
+                            <div className={"achInfo"}>
+                                I have solved more than 100 problems in
+                                HackerRank with Python algorithms.
+                            </div>
+                        </li>
+                        <li>
+                            <div className="achTitle">
+                                Academic Road (School and universities)
+                            </div>
+                            <div className={"achInfo"}>
+                                I have participated in many Math and Physics
+                                Olympiads during my school years with fairly big
+                                success. I have obtained 100% financial grants
+                                on both bachelor and master's degree study after
+                                successfully passing the entrance exams.
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -294,14 +342,38 @@ const StoryBar = () => {
 function App() {
     return (
         <div className="App">
-            <header className="header">
-                <img className={"img"} src={mainPhotoBuildPath} alt="main" />
-                <BasicInfo />
-            </header>
+            <div className={"fotmats"}>
+                <a
+                    className={"webpage"}
+                    href="https://leodevbro.github.io"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                >
+                    Webpage
+                </a>
+                <a
+                    className={"pdf"}
+                    href="https://drive.google.com/file/d/1EdADabTOz1ut0peTXuHOGp0BrRdLlr1b/view?usp=sharing"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                >
+                    PDF
+                </a>
+            </div>
+            <div>
+                <header className="header">
+                    <img
+                        className={"img"}
+                        src={mainPhotoBuildPath}
+                        alt="main"
+                    />
+                    <BasicInfo />
+                </header>
 
-            <div className={"appBody"}>
-                <BriefBar />
-                <StoryBar />
+                <div className={"appBody"}>
+                    <BriefBar />
+                    <StoryBar />
+                </div>
             </div>
         </div>
     );
