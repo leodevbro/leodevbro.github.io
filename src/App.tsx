@@ -96,6 +96,7 @@ const BriefBar = () => {
                     <span className={"skill"}>TypeScript</span>
                     <span className={"skill"}>JavaScript (ES6)</span>
                     <span className={"skill"}>CSS/SCSS/LESS</span>
+                    <span className={"skill"}>Git</span>
                     <span className={"skill"}>Advanced English</span>
                     <span className={"skill"}>Math</span>
                     <span className={"skill"}>SQL</span>
