@@ -6,6 +6,7 @@ import ugLogoBuildPath from "./images/ug.png";
 import lupiLogoBuildPath from "./images/lupi.png";
 import exactproLogoBuildPath from "./images/exactpro.png";
 import blockmanIconBuildPath from "./images/blockman-icon.png";
+import blockmanReactIconBuildPath from "./images/blockman-react-icon.png";
 import musicRankIconBuildPath from "./images/music-rank-logo-draft.png";
 import musicRankSheetsIconBuildPath from "./images/music-rank-sheets.png";
 import emojiIconBuildPath from "./images/emoji.png";
@@ -27,6 +28,7 @@ const BasicInfo = () => {
         <div className={"basicInfo"}>
             <div className={"i1"}>
                 <div className={"name"}>Levan Katsadze</div>
+                <div className={"nameGeo"}>ლევან კაცაძე</div>
                 <div className={"prof"}>Frontend Developer</div>
                 <div className={"birth"}>1995-03-03</div>
             </div>
@@ -93,10 +95,11 @@ const BriefBar = () => {
                     <span className={"skill"}>React</span>
                     <span className={"skill"}>TypeScript</span>
                     <span className={"skill"}>JavaScript (ES6)</span>
+                    <span className={"skill"}>CSS/SCSS/LESS</span>
                     <span className={"skill"}>Advanced English</span>
                     <span className={"skill"}>Math</span>
-                    <span className={"skill"}>Basics of SQL</span>
-                    <span className={"skill"}>Basics of Python</span>
+                    <span className={"skill"}>SQL</span>
+                    <span className={"skill"}>Python</span>
                 </div>
             </div>
             <div className={"langBox bbItem"}>
@@ -190,7 +193,7 @@ const StoryBar = () => {
                 </div>
             </div>
             <div className={"bigProjects"}>
-                <div className={"bpHead hea"}>Personal Large Project(s)</div>
+                <div className={"bpHead hea"}>PERSONAL LARGE PROJECT(S)</div>
                 <hr className={"hr"} />
                 <div className={"bpBody"}>
                     <NanoItem
@@ -209,20 +212,20 @@ const StoryBar = () => {
                 </div>
             </div>
             <div className={"jobs"}>
-                <div className={"jobsHead hea"}>Work Experience</div>
+                <div className={"jobsHead hea"}>WORK EXPERIENCE</div>
                 <hr className={"hr"} />
                 <div className={"jobsBody"}>
                     <NanoItem
                         imgSrc={lupiLogoBuildPath}
-                        title={"Frontend Developer"}
+                        title={"Frontend Developer (React, TypeScript)"}
                         info1={"Lupi AI - ლუპი აი (Tbilisi, Georgia)"}
                         mainLink={"https://www.facebook.com/lupiapp"}
-                        info2={"10/2020 - 05/2021"}
+                        info2={"10/2020 - 05/2021 (www.tvschool.ge)"}
                     />
 
                     <NanoItem
                         imgSrc={exactproLogoBuildPath}
-                        title={"Software Tester"}
+                        title={"Software Tester (QA Of Stock Exchanges)"}
                         info1={"Exactpro Systems (Tbilisi, Georgia)"}
                         mainLink={
                             "https://www.linkedin.com/company/exactpro-systems-llc/"
@@ -233,15 +236,15 @@ const StoryBar = () => {
             </div>
 
             <div className={"miniProjects"}>
-                <div className={"mpHead hea"}>Personal Small Projects</div>
+                <div className={"mpHead hea"}>PERSONAL SMALL PROJECTS</div>
                 <hr className={"hr"} />
                 <div className={"mpBody"}>
                     <NanoItem
-                        imgSrc={ticTacToeIconBuildPath}
-                        title={"Tic-tac-toe game with React.js"}
+                        imgSrc={blockmanReactIconBuildPath}
+                        title={"Blockman (React.js playground)"}
                         info1={"Live Demo and Source Code"}
-                        mainLink={"https://codesandbox.io/s/sad-firefly-jbunr"}
-                        info2={"This was a prehire task from Lupi AI."}
+                        mainLink={"https://youtu.be/PIie9KKUHEA?t=82"}
+                        info2={`This is the first generation of my "Blockman" idea. It was the visual testing project before attempting to write the extension for VSCode.`}
                     />
                     <NanoItem
                         imgSrc={musicRankIconBuildPath}
@@ -264,6 +267,13 @@ const StoryBar = () => {
                         info2={
                             "Google Sheets playground for personal music rank"
                         }
+                    />
+                    <NanoItem
+                        imgSrc={ticTacToeIconBuildPath}
+                        title={"Tic-tac-toe game with React.js"}
+                        info1={"Live Demo and Source Code"}
+                        mainLink={"https://codesandbox.io/s/sad-firefly-jbunr"}
+                        info2={"This was a prehire task from Lupi AI."}
                     />
                     <NanoItem
                         imgSrc={roadCrossingIconBuildPath}
@@ -300,10 +310,33 @@ const StoryBar = () => {
                 </div>
             </div>
             <div className={"achievements"}>
-                <div className={"achHead hea"}>Achievements</div>
+                <div className={"achHead hea"}>ACHIEVEMENTS</div>
                 <hr className={"hr"} />
                 <div className={"achBody"}>
                     <ul>
+                        <li>
+                            <div className="achTitle">
+                                TBC x Datathon{" "}
+                                <a
+                                    href="https://www.helloblog.ge/story/Datathon-2019"
+                                    target={"_blank"}
+                                    rel={"noreferrer"}
+                                >
+                                    2019
+                                </a>{" "}
+                                (Tbilisi, Georgia)
+                            </div>
+                            <div className={"achInfo"}>
+                                Won TBC x Datathon 2019 as a team "Skynet" with
+                                my 2 collegues. Analyzed and visualized real
+                                estate data 350,000+ records and found
+                                correlation between prices and other features
+                                like area, district, rooms... Also found out a
+                                pattern of pricing with "Random Forest"
+                                algorithm and created backend API + mobile app
+                                that returned best real estate deals.
+                            </div>
+                        </li>
                         <li>
                             <div className="achTitle">
                                 HackerRank Badge: 5 stars in{" "}
