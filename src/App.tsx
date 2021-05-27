@@ -242,7 +242,7 @@ const StoryBar = () => {
                     <NanoItem
                         imgSrc={blockmanReactIconBuildPath}
                         title={"Blockman (React.js playground)"}
-                        info1={"Live Demo and Source Code"}
+                        info1={"Video Guide and Codesandbox Demo"}
                         mainLink={"https://youtu.be/PIie9KKUHEA?t=82"}
                         info2={`This is the first generation of my "Blockman" idea. It was the visual testing project before attempting to write the extension for VSCode.`}
                     />
