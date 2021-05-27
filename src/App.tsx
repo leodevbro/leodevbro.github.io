@@ -302,7 +302,7 @@ const StoryBar = () => {
                         title={"Number Sum Game with React.js"}
                         info1={"Live Demo and Source Code"}
                         mainLink={
-                            "https://codesandbox.io/s/summer-moon-ghyqk?file=/src/components/App.js"
+                            "https://codesandbox.io/s/busy-cache-34l1e?file=/src/components/App.js"
                         }
                         info2={
                             "This was a part of React.js cource of PluralSight."
