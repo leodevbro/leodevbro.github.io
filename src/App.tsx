@@ -204,7 +204,7 @@ const StoryBar = () => {
                             "VSCode Extension To Highlight Nested Code Blocks"
                         }
                         mainLink={
-                            "https://github.com/leodevbro/vscode-blockman"
+                            "https://marketplace.visualstudio.com/items?itemName=leodevbro.blockman"
                         }
                         info2={
                             "Really wanted to find such feature in code editors, couldn't find anywhere, so I dedicated about 6 months to create it myself."
