@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.80552cea.chunk.css",
-    "main.js": "/static/js/main.376e5769.chunk.js",
-    "main.js.map": "/static/js/main.376e5769.chunk.js.map",
+    "main.css": "/static/css/main.b63a772b.chunk.css",
+    "main.js": "/static/js/main.a91b28f7.chunk.js",
+    "main.js.map": "/static/js/main.a91b28f7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -10,13 +10,16 @@
     "static/js/3.1f36ed0d.chunk.js": "/static/js/3.1f36ed0d.chunk.js",
     "static/js/3.1f36ed0d.chunk.js.map": "/static/js/3.1f36ed0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.80552cea.chunk.css.map": "/static/css/main.80552cea.chunk.css.map",
+    "static/css/main.b63a772b.chunk.css.map": "/static/css/main.b63a772b.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
+    "static/media/around25-logo.7450d1de.png": "/static/media/around25-logo.7450d1de.png",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
     "static/media/exactpro.59813642.png": "/static/media/exactpro.59813642.png",
+    "static/media/facebook-icon.e7c9bf38.svg": "/static/media/facebook-icon.e7c9bf38.svg",
     "static/media/git.f2daa3c8.svg": "/static/media/git.f2daa3c8.svg",
     "static/media/gtu.15edf003.png": "/static/media/gtu.15edf003.png",
+    "static/media/lingswap-icon.c104f7fc.png": "/static/media/lingswap-icon.c104f7fc.png",
     "static/media/linkedin.c4edbd80.svg": "/static/media/linkedin.c4edbd80.svg",
     "static/media/location.4e26f4a1.svg": "/static/media/location.4e26f4a1.svg",
     "static/media/lupi.789cf8df.png": "/static/media/lupi.789cf8df.png",
@@ -24,7 +27,6 @@
     "static/media/music-rank-logo-draft.3ecd2140.png": "/static/media/music-rank-logo-draft.3ecd2140.png",
     "static/media/music-rank-sheets.07404bcd.png": "/static/media/music-rank-sheets.07404bcd.png",
     "static/media/number-sum.6be82927.png": "/static/media/number-sum.6be82927.png",
-    "static/media/phone.ec9734a4.svg": "/static/media/phone.ec9734a4.svg",
     "static/media/photo-leo.385103e0.jpg": "/static/media/photo-leo.385103e0.jpg",
     "static/media/road-crossing.a05231a8.png": "/static/media/road-crossing.a05231a8.png",
     "static/media/tic-tac-toe.4418a710.png": "/static/media/tic-tac-toe.4418a710.png",
@@ -33,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
-    "static/css/main.80552cea.chunk.css",
-    "static/js/main.376e5769.chunk.js"
+    "static/css/main.b63a772b.chunk.css",
+    "static/js/main.a91b28f7.chunk.js"
   ]
 }
