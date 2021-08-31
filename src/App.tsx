@@ -15,7 +15,7 @@ import numberSumIconBuildPath from "./images/number-sum.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
-import { ReactComponent as MyPhoneIcon } from "./images/phone.svg";
+import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
 import { ReactComponent as MyMailIcon } from "./images/mail.svg";
 import { ReactComponent as MyGitIcon } from "./images/git.svg";
 import { ReactComponent as MyLinkedinIcon } from "./images/linkedin.svg";
@@ -29,7 +29,7 @@ const BasicInfo = () => {
             <div className={"i1"}>
                 <div className={"name"}>Levan Katsadze</div>
                 <div className={"nameGeo"}>ლევან კაცაძე</div>
-                <div className={"prof"}>Frontend Developer</div>
+                <div className={"prof"}>Software Developer</div>
                 <div className={"birth"}>1995-03-03</div>
             </div>
 
@@ -68,11 +68,19 @@ const BasicInfo = () => {
                         </a>
                     </span>
                 </div>
-                <div className={"phone i2child"}>
+                <div className={"facebook i2child"}>
                     <span className={"span"}>
-                        <MyPhoneIcon className={"phoneIcon icon"} />
+                        <MyFacebookIcon className={"facebookIcon icon"} />
                     </span>
-                    <span className={"span"}>+995 598776645</span>
+                    <span className={"span"}>
+                        <a
+                            href="https://www.facebook.com/leodevbro2"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            facebook.com/leodevbro2
+                        </a>
+                    </span>
                 </div>
                 <div className={"location i2child"}>
                     <span className={"span"}>
