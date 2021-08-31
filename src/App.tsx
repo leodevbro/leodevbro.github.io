@@ -13,6 +13,8 @@ import emojiIconBuildPath from "./images/emoji.png";
 import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import numberSumIconBuildPath from "./images/number-sum.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
+import lingswapIconBuildPath from "./images/lingswap-icon.png";
+import around25IconBuildPath from "./images/around25-logo.png";
 
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
 import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
@@ -21,7 +23,6 @@ import { ReactComponent as MyGitIcon } from "./images/git.svg";
 import { ReactComponent as MyLinkedinIcon } from "./images/linkedin.svg";
 import "./App.scss";
 
-console.log("mainPhoto:", mainPhotoBuildPath);
 
 const BasicInfo = () => {
     return (
@@ -187,7 +188,7 @@ const StoryBar = () => {
                             "Georgian Technical University (Tbilisi, Georgia)"
                         }
                         mainLink={"https://www.facebook.com/gtu.ge"}
-                        info2={"10/2019 - Present"}
+                        info2={"2019-10 => 2021-08"}
                     />
 
                     <NanoItem
@@ -197,7 +198,7 @@ const StoryBar = () => {
                         mainLink={
                             "https://www.facebook.com/TheUniversityofGeorgia"
                         }
-                        info2={"09/2014 - 09/2019"}
+                        info2={"2014-09 => 2019-09"}
                     />
                 </div>
             </div>
@@ -225,11 +226,27 @@ const StoryBar = () => {
                 <hr className={"hr"} />
                 <div className={"jobsBody"}>
                     <NanoItem
+                        imgSrc={lingswapIconBuildPath}
+                        title={"Frontend Developer (React, TypeScript)"}
+                        info1={"LingSwap project by Iain Watt"}
+                        mainLink={"https://www.linkedin.com/in/iainjameswatt"}
+                        info2={"2020-06 => Present"}
+                    />
+
+                    <NanoItem
+                        imgSrc={around25IconBuildPath}
+                        title={"Frontend Developer (React, TypeScript)"}
+                        info1={"Around25 (Ebbot project on Upwork)"}
+                        mainLink={"https://www.upwork.com/freelancers/~01516287f71dcde5d9"}
+                        info2={"2020-07 => 2021-08"}
+                    />
+
+                    <NanoItem
                         imgSrc={lupiLogoBuildPath}
                         title={"Frontend Developer (React, TypeScript)"}
                         info1={"Lupi AI - ლუპი აი (Tbilisi, Georgia)"}
                         mainLink={"https://www.facebook.com/lupiapp"}
-                        info2={"10/2020 - 05/2021 (www.tvschool.ge)"}
+                        info2={"2020-10 => 2021-05 (www.tvschool.ge)"}
                     />
 
                     <NanoItem
@@ -239,7 +256,7 @@ const StoryBar = () => {
                         mainLink={
                             "https://www.linkedin.com/company/exactpro-systems-llc/"
                         }
-                        info2={"02/2020 - 09/2020"}
+                        info2={"2020-02 => 2020-09"}
                     />
                 </div>
             </div>
