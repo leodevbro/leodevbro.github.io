@@ -230,7 +230,7 @@ const StoryBar = () => {
                         title={"Frontend Developer (React, TypeScript)"}
                         info1={"LingSwap project by Iain Watt"}
                         mainLink={"https://www.linkedin.com/in/iainjameswatt"}
-                        info2={"2020-06 => Present"}
+                        info2={"2021-06 => Present"}
                     />
 
                     <NanoItem
@@ -238,7 +238,7 @@ const StoryBar = () => {
                         title={"Frontend Developer (React, TypeScript)"}
                         info1={"Around25 (Ebbot project on Upwork)"}
                         mainLink={"https://www.upwork.com/freelancers/~01516287f71dcde5d9"}
-                        info2={"2020-07 => 2021-08"}
+                        info2={"2021-07 => 2021-08"}
                     />
 
                     <NanoItem
