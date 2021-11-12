@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b63a772b.chunk.css",
-    "main.js": "/static/js/main.270d8b78.chunk.js",
-    "main.js.map": "/static/js/main.270d8b78.chunk.js.map",
+    "main.js": "/static/js/main.4b8c47fe.chunk.js",
+    "main.js.map": "/static/js/main.4b8c47fe.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -12,7 +12,6 @@
     "index.html": "/index.html",
     "static/css/main.b63a772b.chunk.css.map": "/static/css/main.b63a772b.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
-    "static/media/around25-logo.7450d1de.png": "/static/media/around25-logo.7450d1de.png",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
     "static/media/exactpro.59813642.png": "/static/media/exactpro.59813642.png",
@@ -36,6 +35,6 @@
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
     "static/css/main.b63a772b.chunk.css",
-    "static/js/main.270d8b78.chunk.js"
+    "static/js/main.4b8c47fe.chunk.js"
   ]
 }
