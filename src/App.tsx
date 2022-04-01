@@ -74,11 +74,11 @@ const BasicInfo = () => {
                     </span>
                     <span className={"span"}>
                         <a
-                            href="https://www.facebook.com/leodevbro2"
+                            href="https://www.facebook.com/leodevbro"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            facebook.com/leodevbro2
+                            facebook.com/leodevbro
                         </a>
                     </span>
                 </div>
