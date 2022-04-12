@@ -14,6 +14,7 @@ import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import numberSumIconBuildPath from "./images/number-sum.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 import lingswapIconBuildPath from "./images/lingswap-icon.png";
+import fireartIconBuildPath from "./images/fireart-logo.png";
 
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
 import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
@@ -224,6 +225,14 @@ const StoryBar = () => {
                 <div className={"jobsHead hea"}>WORK EXPERIENCE</div>
                 <hr className={"hr"} />
                 <div className={"jobsBody"}>
+                    <NanoItem
+                        imgSrc={fireartIconBuildPath}
+                        title={"Frontend Developer (React, TypeScript)"}
+                        info1={"Fireart"}
+                        mainLink={"https://fireart.studio"}
+                        info2={"2021-11 => Present"}
+                    />
+                    
                     <NanoItem
                         imgSrc={lingswapIconBuildPath}
                         title={"Frontend Developer (React, TypeScript)"}
