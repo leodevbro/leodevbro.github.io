@@ -23,7 +23,6 @@ import { ReactComponent as MyGitIcon } from "./images/git.svg";
 import { ReactComponent as MyLinkedinIcon } from "./images/linkedin.svg";
 import "./App.scss";
 
-
 const BasicInfo = () => {
     return (
         <div className={"basicInfo"}>
@@ -149,20 +148,42 @@ const BriefBar = () => {
     );
 };
 
+const BlockmanStat: React.FC<{
+    className?: string;
+}> = ({ className }) => {
+    return (
+        <a
+            href="https://marketplace.visualstudio.com/items?itemName=leodevbro.blockman"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            className="blockmanStatA"
+        >
+            <img
+                src="https://vsmarketplacebadge.apphb.com/installs-short/leodevbro.blockman.svg"
+                alt="Blockman stats"
+            />
+        </a>
+    );
+};
+
 const NanoItem: React.FC<{
     imgSrc: string;
     title: string;
     info1: string;
     mainLink: string;
     info2: string;
-}> = ({ imgSrc, title, info1, mainLink, info2 }) => {
+    showStat?: boolean;
+}> = ({ imgSrc, title, info1, mainLink, info2, showStat }) => {
     return (
         <div className={"nanoItem"}>
             <div className={"imgBox"}>
                 <img className={"logo img"} src={imgSrc} alt="nano logo" />
             </div>
             <div className={"infoBox"}>
-                <div className={"nanoTitle"}>{title}</div>
+                <div className={"nanoTitle"}>
+                    <span>{title}</span>{" "}
+                    <span>{showStat && <BlockmanStat />}</span>
+                </div>
                 <div className={"nanoLinkBox"}>
                     <a href={mainLink} target={"_blank"} rel={"noreferrer"}>
                         {info1}
@@ -209,6 +230,7 @@ const StoryBar = () => {
                     <NanoItem
                         imgSrc={blockmanIconBuildPath}
                         title={"Blockman"}
+                        showStat={true}
                         info1={
                             "VSCode Extension To Highlight Nested Code Blocks"
                         }
@@ -232,7 +254,7 @@ const StoryBar = () => {
                         mainLink={"https://fireart.studio"}
                         info2={"2021-11 => Present"}
                     />
-                    
+
                     <NanoItem
                         imgSrc={lingswapIconBuildPath}
                         title={"Frontend Developer (React, TypeScript)"}
