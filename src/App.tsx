@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import mainPhotoBuildPath from "./images/photo-leo.jpg";
 import gtuCoatOfArmsBuildPath from "./images/gtu.png";
@@ -168,7 +168,7 @@ const BlockmanStat: React.FC<{
 
 const NanoItem: React.FC<{
     imgSrc: string;
-    title: string;
+    title: ReactNode;
     info1: string;
     mainLink: string;
     info2: string;
@@ -185,9 +185,13 @@ const NanoItem: React.FC<{
                     <span>{showStat && <BlockmanStat />}</span>
                 </div>
                 <div className={"nanoLinkBox"}>
-                    <a href={mainLink} target={"_blank"} rel={"noreferrer"}>
-                        {info1}
-                    </a>
+                    {mainLink ? (
+                        <a href={mainLink} target={"_blank"} rel={"noreferrer"}>
+                            {info1}
+                        </a>
+                    ) : (
+                        info1
+                    )}
                 </div>
                 <div className={"nanoInfo2"}>{info2}</div>
             </div>
@@ -224,18 +228,29 @@ const StoryBar = () => {
                 </div>
             </div>
             <div className={"bigProjects"}>
-                <div className={"bpHead hea"}>PERSONAL LARGE PROJECT(S)</div>
+                <div className={"bpHead hea"}>LARGE PROJECT(S)</div>
                 <hr className={"hr"} />
                 <div className={"bpBody"}>
                     <NanoItem
                         imgSrc={blockmanIconBuildPath}
-                        title={"Blockman"}
+                        title={
+                            <a
+                                target={"_blank"}
+                                rel={"noreferrer"}
+                                href={
+                                    "https://marketplace.visualstudio.com/items?itemName=leodevbro.blockman"
+                                }
+                            >
+                                Blockman
+                            </a>
+                        }
                         showStat={true}
                         info1={
                             "VSCode Extension To Highlight Nested Code Blocks"
                         }
                         mainLink={
-                            "https://marketplace.visualstudio.com/items?itemName=leodevbro.blockman"
+                            ""
+                            // "https://marketplace.visualstudio.com/items?itemName=leodevbro.blockman"
                         }
                         info2={
                             "Really wanted to find such feature in code editors, couldn't find anywhere, so I dedicated about 6 months to create it myself."
@@ -284,9 +299,18 @@ const StoryBar = () => {
             </div>
 
             <div className={"miniProjects"}>
-                <div className={"mpHead hea"}>PERSONAL SMALL PROJECTS</div>
+                <div className={"mpHead hea"}>SMALL PROJECTS</div>
                 <hr className={"hr"} />
                 <div className={"mpBody"}>
+                    <NanoItem
+                        imgSrc={`https://secure.img1-fg.wfcdn.com/im/27735505/resize-h600-w600%5Ecompr-r85/6303/63037324/Floor+Tiles+%26+Wall+Tiles.jpg`}
+                        title={
+                            "React TypeScript App With Video Scroll Animation"
+                        }
+                        info1={"Live Preview"}
+                        mainLink={"https://react-app-apogee.vercel.app/"}
+                        info2={`React app with smooth sliders, sticky table, dynamic buttons. Loading video frames may take 5-10 seconds.`}
+                    />
                     <NanoItem
                         imgSrc={blockmanReactIconBuildPath}
                         title={"Blockman (React.js playground)"}
