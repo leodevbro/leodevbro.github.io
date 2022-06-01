@@ -172,8 +172,9 @@ const NanoItem: React.FC<{
     info1: string;
     mainLink: string;
     info2: string;
+    info3?: ReactNode;
     showStat?: boolean;
-}> = ({ imgSrc, title, info1, mainLink, info2, showStat }) => {
+}> = ({ imgSrc, title, info1, info3, mainLink, info2, showStat }) => {
     return (
         <div className={"nanoItem"}>
             <div className={"imgBox"}>
@@ -194,6 +195,7 @@ const NanoItem: React.FC<{
                     )}
                 </div>
                 <div className={"nanoInfo2"}>{info2}</div>
+                <div className={"nanoInfo2"}>{info3}</div>
             </div>
         </div>
     );
@@ -309,7 +311,18 @@ const StoryBar = () => {
                         }
                         info1={"Live Preview"}
                         mainLink={"https://react-app-apogee.vercel.app/"}
-                        info2={`React app with smooth sliders, sticky table, dynamic buttons. Loading video frames may take 5-10 seconds.`}
+                        info2={`React app, responsive (mobile/tablet/desktop) with smooth sliders, sticky table, dynamic buttons. Loading video frames may take 5-10 seconds.`}
+                        info3={
+                            <a
+                                target={"_blank"}
+                                rel={"noreferrer"}
+                                href={
+                                    "https://github.com/leodevbro/react-app-apogee"
+                                }
+                            >
+                                Github Repo
+                            </a>
+                        }
                     />
                     <NanoItem
                         imgSrc={blockmanReactIconBuildPath}

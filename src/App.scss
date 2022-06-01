@@ -323,13 +323,14 @@ body {
 .nanoItem {
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     a {
         color: rgb(40, 40, 40);
     }
 
     .imgBox {
+        margin-top: 5px;
         .img {
             width: 50px;
             margin-right: 10px;
