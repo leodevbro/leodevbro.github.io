@@ -269,7 +269,7 @@ const StoryBar = () => {
                         title={"Frontend Developer (React, TypeScript)"}
                         info1={"Fireart"}
                         mainLink={"https://fireart.studio"}
-                        info2={"2021-11 => Present"}
+                        info2={"2021-11 => 2022-08"}
                     />
 
                     <NanoItem
