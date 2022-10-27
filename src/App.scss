@@ -347,6 +347,10 @@ body {
         .nanoLinkBox {
             font-weight: bold;
             font-size: 0.9em;
+
+            &.seLink a {
+                color: rgba(255, 145, 0, 0.795);
+            }
         }
 
         .nanoInfo2 {

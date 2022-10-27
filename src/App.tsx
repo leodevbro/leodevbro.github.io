@@ -15,6 +15,8 @@ import numberSumIconBuildPath from "./images/number-sum.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 import lingswapIconBuildPath from "./images/lingswap-icon.png";
 import fireartIconBuildPath from "./images/fireart-logo.png";
+import around25IconPath from "./images/around25-logo.jpg";
+import triviaIconPath from "./images/trivia-i.png";
 
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
 import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
@@ -100,15 +102,19 @@ const BriefBar = () => {
                 <div className={"skillsHead hea"}>SKILLS</div>
                 <hr className={"hr"} />
                 <div className={"skillsBody"}>
-                    <span className={"skill"}>React</span>
+                    <span className={"skill"}>React.js</span>
                     <span className={"skill"}>TypeScript</span>
-                    <span className={"skill"}>JavaScript (ES6)</span>
-                    <span className={"skill"}>CSS/SCSS/LESS</span>
+                    <span className={"skill"}>JavaScript</span>
+                    <span className={"skill"}>CSS/SCSS</span>
+                    <span className={"skill"}>Redux Toolkit</span>
+                    <span className={"skill"}>Next.js</span>
+                    <span className={"skill"}>React Router</span>
                     <span className={"skill"}>Git</span>
-                    <span className={"skill"}>Advanced English</span>
+                    <span className={"skill"}>Front-end</span>
+                    <span className={"skill"}>HTML</span>
+                    <span className={"skill"}>Algorithms</span>
+                    <span className={"skill"}>Data Structures</span>
                     <span className={"skill"}>Math</span>
-                    <span className={"skill"}>SQL</span>
-                    <span className={"skill"}>Python</span>
                 </div>
             </div>
             <div className={"langBox bbItem"}>
@@ -174,7 +180,8 @@ const NanoItem: React.FC<{
     info2: string;
     info3?: ReactNode;
     showStat?: boolean;
-}> = ({ imgSrc, title, info1, info3, mainLink, info2, showStat }) => {
+    seLink?: string;
+}> = ({ imgSrc, title, info1, info3, mainLink, info2, showStat, seLink }) => {
     return (
         <div className={"nanoItem"}>
             <div className={"imgBox"}>
@@ -192,6 +199,15 @@ const NanoItem: React.FC<{
                         </a>
                     ) : (
                         info1
+                    )}
+                </div>
+                <div className={"nanoLinkBox seLink"}>
+                    {seLink ? (
+                        <a href={seLink} target={"_blank"} rel={"noreferrer"}>
+                            {"Video for some tasks"}
+                        </a>
+                    ) : (
+                        ""
                     )}
                 </div>
                 <div className={"nanoInfo2"}>{info2}</div>
@@ -270,6 +286,15 @@ const StoryBar = () => {
                         info1={"Fireart"}
                         mainLink={"https://fireart.studio"}
                         info2={"2021-11 => 2022-08"}
+                        seLink={"https://www.youtube.com/watch?v=K6k5jTGA2AA&list=PL-YmJSpphBa5JkwwtICmHP5Uz23PQIYBy&index=6"}
+                    />
+
+                    <NanoItem
+                        imgSrc={around25IconPath}
+                        title={"Frontend Developer (React, TypeScript)"}
+                        info1={"Around25"}
+                        mainLink={"https://around25.com"}
+                        info2={"2021-07 => 2021-10"}
                     />
 
                     <NanoItem
@@ -286,6 +311,7 @@ const StoryBar = () => {
                         info1={"Lupi AI - ლუპი აი (Tbilisi, Georgia)"}
                         mainLink={"https://www.facebook.com/lupiapp"}
                         info2={"2020-10 => 2021-05 (www.tvschool.ge)"}
+                        seLink={"https://www.youtube.com/watch?v=viqJmaeFP-g&list=PL-YmJSpphBa5mCQKeRTK5m3Bijc6_jB1s&index=20"}
                     />
 
                     <NanoItem
@@ -311,7 +337,7 @@ const StoryBar = () => {
                         }
                         info1={"Live Preview"}
                         mainLink={"https://react-app-apogee.vercel.app/"}
-                        info2={`React app, responsive (mobile/tablet/desktop) with smooth sliders, sticky table, dynamic buttons. Loading video frames may take 5-10 seconds.`}
+                        info2={`React app, responsive (mobile/tablet/desktop) with smooth sliders, sticky table and scroll-driven video playback.`}
                         info3={
                             <a
                                 target={"_blank"}
@@ -324,6 +350,15 @@ const StoryBar = () => {
                             </a>
                         }
                     />
+
+                    <NanoItem
+                        imgSrc={triviaIconPath}
+                        title={"Trivia Game Web App"}
+                        info1={"Codesandbox Demo"}
+                        mainLink={"https://codesandbox.io/s/small-cache-lwfxe?file=/src/App.tsx"}
+                        info2={`A React-based minigame where users have to answer several true or false questions. The game is built with React, TypeScript, and SCSS.`}
+                    />
+
                     <NanoItem
                         imgSrc={blockmanReactIconBuildPath}
                         title={"Blockman (React.js playground)"}
@@ -331,7 +366,7 @@ const StoryBar = () => {
                         mainLink={"https://youtu.be/PIie9KKUHEA?t=82"}
                         info2={`This is the first generation of my "Blockman" idea. It was the visual testing project before attempting to write the extension for VSCode.`}
                     />
-                    <NanoItem
+                    {/* <NanoItem
                         imgSrc={musicRankIconBuildPath}
                         title={"Music Rank Initial Structure with React.js"}
                         info1={"Live Demo and Source Code"}
@@ -341,8 +376,8 @@ const StoryBar = () => {
                         info2={
                             "The idea is from Youtube playlists, but with more freedom."
                         }
-                    />
-                    <NanoItem
+                    /> */}
+                    {/* <NanoItem
                         imgSrc={musicRankSheetsIconBuildPath}
                         title={
                             "Music Rank using Google Sheets and Google Apps Script"
@@ -352,7 +387,7 @@ const StoryBar = () => {
                         info2={
                             "Google Sheets playground for personal music rank"
                         }
-                    />
+                    /> */}
                     <NanoItem
                         imgSrc={ticTacToeIconBuildPath}
                         title={"Tic-tac-toe game with React.js"}
@@ -381,7 +416,7 @@ const StoryBar = () => {
                             "Input text box with emoji GIFs from joypixels.com website."
                         }
                     />
-                    <NanoItem
+                    {/* <NanoItem
                         imgSrc={numberSumIconBuildPath}
                         title={"Number Sum Game with React.js"}
                         info1={"Live Demo and Source Code"}
@@ -391,7 +426,7 @@ const StoryBar = () => {
                         info2={
                             "This was a part of React.js cource of PluralSight."
                         }
-                    />
+                    /> */}
                 </div>
             </div>
             <div className={"achievements"}>
