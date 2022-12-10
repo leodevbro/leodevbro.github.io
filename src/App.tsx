@@ -250,23 +250,26 @@ const NanoItem: React.FC<{
 const StoryBar = () => {
   return (
     <div className={"storyBar"}>
-      <NanoItem
-        className={"toptalNano"}
-        imgSrc={toptalIconPath}
-        title={
-          <a
-            className="superLinkTitle"
-            target={"_blank"}
-            rel={"noreferrer"}
-            href={"https://www.toptal.com/resume/levan-katsadze"}
-          >
-            Toptal Resume
-          </a>
-        }
-        info1={"Member since September 23, 2022"}
-        mainLink={"https://www.toptal.com/resume/levan-katsadze"}
-        // info2={""}
-      />
+      <div className="wrapOfToptalNano">
+        <NanoItem
+          className={"toptalNano"}
+          imgSrc={toptalIconPath}
+          title={
+            <a
+              className="superLinkTitle"
+              target={"_blank"}
+              rel={"noreferrer"}
+              href={"https://www.toptal.com/resume/levan-katsadze"}
+            >
+              Toptal Resume
+            </a>
+          }
+          info1={"Member since September 23, 2022."}
+          mainLink={"https://www.toptal.com/resume/levan-katsadze"}
+          info2={"toptal.com/resume/levan-katsadze"}
+        />
+      </div>
+
       <div className={"bigProjects"}>
         <div className={"bpHead hea"}>LARGE PROJECT(S)</div>
         <hr className={"hr"} />
