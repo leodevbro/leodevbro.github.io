@@ -1,394 +1,415 @@
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 .hea {
-    margin-top: 20px;
-    text-align: left;
-    font-size: 24px;
-    font-weight: bold;
-    color: #4568dc;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4568dc;
 }
 
 .App {
-    font-family: "IBM Plex Sans";
-    font-size: 18px;
-    // border: 1px solid green;
-    margin: 0 auto;
-    max-width: 850px;
-    /* width: 950px; */
-    padding-left: 10px;
-    padding-right: 10px;
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  // border: 1px solid green;
+  margin: 0 auto;
+  max-width: 850px;
+  /* width: 950px; */
+  padding-left: 10px;
+  padding-right: 10px;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @media screen and (max-width: 740px) {
-        padding-left: 20px;
-        padding-right: 20px;
+  @media screen and (max-width: 740px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 530px) {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .fotmats {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    .webpage {
+      display: inline-block;
+      padding: 5px;
+      border: 2px solid #4568dc;
+      color: #4568dc;
+      border-radius: 5px;
+      margin-right: 10px;
     }
 
-    @media screen and (max-width: 530px) {
-        padding-left: 7px;
-        padding-right: 7px;
+    .pdf {
+      display: inline-block;
+      padding: 5px;
+      border: 2px solid #8a6ab3;
+      color: #8a6ab3;
+      border-radius: 5px;
     }
+  }
 
-    .fotmats {
-        margin-top: 15px;
-        margin-bottom: 10px;
-        text-align: center;
-        font-weight: bold;
-        .webpage {
-            display: inline-block;
-            padding: 5px;
-            border: 2px solid #4568dc;
-            color: #4568dc;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
+  .hr {
+    border: 1px solid #4568dc;
+    margin-top: 0px;
+  }
 
-        .pdf {
-            display: inline-block;
-            padding: 5px;
-            border: 2px solid #8a6ab3;
-            color: #8a6ab3;
-            border-radius: 5px;
-        }
-    }
-
-    .hr {
-        border: 1px solid #4568dc;
-        margin-top: 0px;
-    }
-
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        // border: 1px solid brown;
-
-        .img {
-            max-width: 170px;
-            border-radius: 500px;
-        }
-    }
-
-    .appBody {
-        display: flex;
-        // flex-wrap: wrap;
-        flex-direction: row;
-        // justify-content: space-evenly;
-        // align-items: center;
-        // border: 1px solid brown;
-        @media screen and (max-width: 740px) {
-            flex-wrap: wrap;
-        }
-    }
-}
-
-.basicInfo {
+  .header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    // border: 1px solid brown;
 
-    border-radius: 10px;
+    .img {
+      max-width: 170px;
+      border-radius: 500px;
+    }
+  }
 
-    margin: 10px;
+  .appBody {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    // align-items: center;
+    // border: 1px solid brown;
+    @media screen and (max-width: 740px) {
+      flex-wrap: wrap;
+    }
+  }
+}
 
+.basicInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-radius: 10px;
+
+  margin: 10px;
+
+  color: white;
+  background: #4568dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8a6ab3,
+    #4568dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4568dc,
+    #8a6ab3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  a {
     color: white;
-    background: #4568dc; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        #8a6ab3,
-        #4568dc
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #4568dc,
-        #8a6ab3
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 
-    a {
-        color: white;
+  .i1 {
+    margin-right: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: right;
+
+    @media screen and (max-width: 740px) {
+      text-align: center;
+      margin-right: 15px;
+    }
+    .name {
+      font-size: 30px;
+      line-height: 30px;
+      // font-weight: bold;
     }
 
-    .i1 {
-        margin-right: 30px;
-        margin-left: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        text-align: right;
-
-        @media screen and (max-width: 740px) {
-            text-align: center;
-            margin-right: 15px;
-        }
-        .name {
-            font-size: 30px;
-            line-height: 30px;
-            // font-weight: bold;
-        }
-
-        .nameGeo {
-            position: relative;
-            bottom: 3px;
-            font-family: "Segoe UI";
-            font-size: 27px;
-            line-height: 30px;
-            // font-weight: bold;
-        }
-
-        .prof {
-            font-size: 17px;
-        }
-
-        .birth {
-            font-size: 16px;
-        }
-
-        & > div {
-            margin-bottom: 8px;
-        }
+    .nameGeo {
+      position: relative;
+      bottom: 3px;
+      font-family: "Segoe UI";
+      font-size: 27px;
+      line-height: 30px;
+      // font-weight: bold;
     }
 
-    .i2 {
-        margin-right: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        .i2child {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-
-            .span {
-                display: flex;
-                align-items: center;
-            }
-
-            // .facebookIcon {
-            //     width: 40px;
-            //     height: 40px;
-            // }
-        }
-        .icon {
-            margin-right: 5px;
-            width: 15px;
-            height: 18px;
-            * {
-                fill: rgb(255, 255, 255);
-            }
-        }
-
-        .location {
-            .locationIcon {
-            }
-        }
+    .prof {
+      font-size: 17px;
     }
+
+    .birth {
+      font-size: 16px;
+    }
+
+    & > div {
+      margin-bottom: 8px;
+    }
+  }
+
+  .i2 {
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    .i2child {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .span {
+        display: flex;
+        align-items: center;
+      }
+
+      // .facebookIcon {
+      //     width: 40px;
+      //     height: 40px;
+      // }
+    }
+    .icon {
+      margin-right: 5px;
+      width: 15px;
+      height: 18px;
+      * {
+        fill: rgb(255, 255, 255);
+      }
+
+      &.toptalIcon {
+        transform: scale(1.5);
+      }
+    }
+
+    .location {
+      .locationIcon {
+      }
+    }
+  }
 }
 
 .briefBar {
-    width: 200px;
-    min-width: 200px;
-    // border: 1px solid rgb(255, 0, 234);
+  width: 200px;
+  min-width: 200px;
+  // border: 1px solid rgb(255, 0, 234);
 
-    @media screen and (max-width: 740px) {
-        min-width: 100%;
+  @media screen and (max-width: 740px) {
+    min-width: 100%;
+  }
+
+  .skillBox {
+    .skillsHead {
+      // text-align: center;
+      // font-size: 30px;
+      // font-weight: bold;
+      // color: #4568dc;
     }
 
-    .skillBox {
-        .skillsHead {
-            // text-align: center;
-            // font-size: 30px;
-            // font-weight: bold;
-            // color: #4568dc;
-        }
+    .skillsBody {
+      // text-align: center;
+      .skill {
+        display: inline-block;
+        color: white;
+        padding: 5px;
+        margin: 3px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: #4568dc; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #8a6ab3,
+          #4568dc
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #4568dc,
+          #8a6ab3
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+    }
+  }
 
-        .skillsBody {
-            // text-align: center;
-            .skill {
-                display: inline-block;
-                color: white;
-                padding: 5px;
-                margin: 3px;
-                margin-bottom: 10px;
-                border-radius: 5px;
-                background: #4568dc; /* fallback for old browsers */
-                background: -webkit-linear-gradient(
-                    to right,
-                    #8a6ab3,
-                    #4568dc
-                ); /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(
-                    to right,
-                    #4568dc,
-                    #8a6ab3
-                ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            }
-        }
+  .langBox {
+    .langHead {
+      margin-top: 15px;
+      // text-align: center;
+      // font-size: 30px;
+      // font-weight: bold;
+      // color: #4568dc;
     }
 
-    .langBox {
-        .langHead {
-            margin-top: 15px;
-            // text-align: center;
-            // font-size: 30px;
-            // font-weight: bold;
-            // color: #4568dc;
+    .langBody {
+      .lang {
+        margin-bottom: 15px;
+        .langName {
+          font-weight: bold;
+          color: rgb(40, 40, 40);
         }
 
-        .langBody {
-            .lang {
-                margin-bottom: 15px;
-                .langName {
-                    font-weight: bold;
-                    color: rgb(40, 40, 40);
-                }
-
-                .langStatus {
-                    color: #4568dc;
-                    font-style: italic;
-                    font-size: 16px;
-                }
-            }
+        .langStatus {
+          color: #4568dc;
+          font-style: italic;
+          font-size: 16px;
         }
+      }
+    }
+  }
+
+  .interestsBox {
+    font-size: 14px;
+    .interestsHead {
+      margin-top: 10px;
+      // text-align: center;
+      // font-size: 30px;
+      // font-weight: bold;
+      // color: #4568dc;
     }
 
-    .interestsBox {
-        font-size: 14px;
-        .interestsHead {
-            margin-top: 10px;
-            // text-align: center;
-            // font-size: 30px;
-            // font-weight: bold;
-            // color: #4568dc;
-        }
-
-        .interestsBody {
-            .interest {
-                display: inline-block;
-                padding: 3px;
-                margin-left: 3px;
-                margin-right: 3px;
-                margin-bottom: 7px;
-                border-radius: 5px;
-                border: 2px solid hsl(0, 0%, 70%);
-                // background: #4568dc;
-            }
-        }
+    .interestsBody {
+      .interest {
+        display: inline-block;
+        padding: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 7px;
+        border-radius: 5px;
+        border: 2px solid hsl(0, 0%, 70%);
+        // background: #4568dc;
+      }
     }
+  }
 }
 
 .storyBar {
-    padding-left: 50px;
-    @media screen and (max-width: 740px) {
-        padding-left: 0px;
+  padding-left: 50px;
+  @media screen and (max-width: 740px) {
+    padding-left: 0px;
+  }
+
+  .edu {
+    .eduHead {
     }
 
-    .edu {
-        .eduHead {
-        }
+    .eduBody {
+    }
+  }
 
-        .eduBody {
-        }
+  .bigProjects {
+  }
+
+  .jobs {
+    .jobsHead {
     }
 
-    .bigProjects {
+    .jobsBody {
     }
+  }
 
-    .jobs {
-        .jobsHead {
-        }
-
-        .jobsBody {
-        }
-    }
-
-    .miniProjects {
-    }
+  .miniProjects {
+  }
 }
 
 .nanoItem {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
 
-    a {
-        color: rgb(40, 40, 40);
+  a {
+    color: rgb(40, 40, 40);
+  }
+
+  .imgBox {
+    margin-top: 5px;
+    .img {
+      width: 50px;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+  }
+
+  .infoBox {
+    .nanoTitle {
+      font-weight: bold;
+      color: #4568dc;
     }
 
-    .imgBox {
-        margin-top: 5px;
-        .img {
-            width: 50px;
-            margin-right: 10px;
-            border-radius: 4px;
-        }
+    .nanoLinkBox {
+      font-weight: bold;
+      font-size: 0.9em;
+
+      &.seLink a {
+        color: rgba(255, 145, 0, 0.795);
+      }
     }
 
-    .infoBox {
-        .nanoTitle {
-            font-weight: bold;
-            color: #4568dc;
-        }
-
-        .nanoLinkBox {
-            font-weight: bold;
-            font-size: 0.9em;
-
-            &.seLink a {
-                color: rgba(255, 145, 0, 0.795);
-            }
-        }
-
-        .nanoInfo2 {
-            font-size: 0.8em;
-            font-style: italic;
-        }
+    .nanoInfo2 {
+      font-size: 0.8em;
+      font-style: italic;
     }
+  }
 }
 
 .achievements {
-    li {
-        margin-bottom: 10px;
-    }
-    .achHead {
+  li {
+    margin-bottom: 10px;
+  }
+  .achHead {
+  }
+
+  .achBody {
+    color: rgb(40, 40, 40);
+    .achTitle {
+      font-weight: bold;
+      font-size: 16px;
+      // color: #4568dc;
+
+      a {
+        color: #4568dc;
+      }
     }
 
-    .achBody {
-        color: rgb(40, 40, 40);
-        .achTitle {
-            font-weight: bold;
-            font-size: 16px;
-            // color: #4568dc;
-
-            a {
-                color: #4568dc;
-            }
-        }
-
-        .achInfo {
-            font-size: 15px;
-        }
+    .achInfo {
+      font-size: 15px;
     }
+  }
 }
 
-
 .blockmanStatA {
-    display: inline-block;
-    position: relative;
-    transform: translateY(3px);
-    margin-left: 5px;
+  display: inline-block;
+  position: relative;
+  transform: translateY(3px);
+  margin-left: 5px;
+}
+
+.toptalNano {
+  display: flex;
+  align-items: center;
+
+  .infoBox {
+    .nanoLinkBox {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.superLinkTitle.superLinkTitle.superLinkTitle {
+  // text-decoration: none;
+  color: rgb(23, 73, 212);
 }

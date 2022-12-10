@@ -15,12 +15,14 @@ import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 import lingswapIconBuildPath from "./images/lingswap-icon.png";
 import fireartIconBuildPath from "./images/fireart-logo.png";
-import around25IconPath from "./images/around25-logo.jpg";
+// import around25IconPath from "./images/around25-logo.jpg";
 import triviaIconPath from "./images/trivia-i.png";
+import toptalIconPath from "./images/toptal-logo.png";
 
 import { ReactComponent as MyLocationIcon } from "./images/location.svg";
-import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
+// import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
 import { ReactComponent as MyMailIcon } from "./images/mail.svg";
+import { ReactComponent as ToptalIconSvg } from "./images/toptal-logo-vector.svg";
 import { ReactComponent as MyGitIcon } from "./images/git.svg";
 import { ReactComponent as MyLinkedinIcon } from "./images/linkedin.svg";
 import "./App.scss";
@@ -38,9 +40,17 @@ const BasicInfo = () => {
       <div className={"i2"}>
         <div className={"toptal i2child"}>
           <span className={"span"}>
-            <MyMailIcon className={"mailIcon icon"} />
+            <ToptalIconSvg className={"toptalIcon icon"} />
           </span>
-          <span className={"span"}>leodevbro@gmail.com</span>
+          <span className={"span"}>
+            <a
+              href="https://www.toptal.com/resume/levan-katsadze"
+              target="_blank"
+              rel="noreferrer"
+            >
+              toptal.com/resume/levan-katsadze
+            </a>
+          </span>
         </div>
         <div className={"mail i2child"}>
           <span className={"span"}>
@@ -76,7 +86,8 @@ const BasicInfo = () => {
             </a>
           </span>
         </div>
-        <div className={"facebook i2child"}>
+
+        {/* <div className={"facebook i2child"}>
           <span className={"span"}>
             <MyFacebookIcon className={"facebookIcon icon"} />
           </span>
@@ -89,7 +100,8 @@ const BasicInfo = () => {
               facebook.com/leodevbro
             </a>
           </span>
-        </div>
+        </div> */}
+
         <div className={"location i2child"}>
           <span className={"span"}>
             <MyLocationIcon className={"locationIcon icon"} />
@@ -111,13 +123,13 @@ const BriefBar = () => {
           <span className={"skill"}>React.js</span>
           <span className={"skill"}>TypeScript</span>
           <span className={"skill"}>JavaScript</span>
-          <span className={"skill"}>CSS/SCSS</span>
-          <span className={"skill"}>Redux Toolkit</span>
           <span className={"skill"}>Next.js</span>
+          <span className={"skill"}>CSS/SCSS Modules</span>
+          <span className={"skill"}>Redux Toolkit</span>
           <span className={"skill"}>React Router</span>
           <span className={"skill"}>Git</span>
-          <span className={"skill"}>Front-end</span>
-          <span className={"skill"}>HTML</span>
+          <span className={"skill"}>Styled Components</span>
+          <span className={"skill"}>Tailwind CSS</span>
           <span className={"skill"}>Algorithms</span>
           <span className={"skill"}>Data Structures</span>
           <span className={"skill"}>Math</span>
@@ -179,17 +191,30 @@ const BlockmanStat: React.FC<{
 };
 
 const NanoItem: React.FC<{
+  className?: string;
   imgSrc: string;
   title: ReactNode;
+  titleMode?: "super";
   info1: string;
   mainLink: string;
-  info2: string;
+  info2?: string;
   info3?: ReactNode;
   showStat?: boolean;
   seLink?: string;
-}> = ({ imgSrc, title, info1, info3, mainLink, info2, showStat, seLink }) => {
+}> = ({
+  className,
+  imgSrc,
+  title,
+  titleMode,
+  info1,
+  info3,
+  mainLink,
+  info2,
+  showStat,
+  seLink,
+}) => {
   return (
-    <div className={"nanoItem"}>
+    <div className={`nanoItem ${className}`}>
       <div className={"imgBox"}>
         <img className={"logo img"} src={imgSrc} alt="nano logo" />
       </div>
@@ -215,8 +240,8 @@ const NanoItem: React.FC<{
             ""
           )}
         </div>
-        <div className={"nanoInfo2"}>{info2}</div>
-        <div className={"nanoInfo2"}>{info3}</div>
+        {info2 && <div className={"nanoInfo2"}>{info2}</div>}
+        {info3 && <div className={"nanoInfo2"}>{info3}</div>}
       </div>
     </div>
   );
@@ -225,27 +250,23 @@ const NanoItem: React.FC<{
 const StoryBar = () => {
   return (
     <div className={"storyBar"}>
-      <div className={"edu"}>
-        <div className={"eduHead hea"}>EDUCATION</div>
-        <hr className={"hr"} />
-        <div className={"eduBody"}>
-          <NanoItem
-            imgSrc={gtuCoatOfArmsBuildPath}
-            title={"Web Technologies (Master's Degree)"}
-            info1={"Georgian Technical University (Tbilisi, Georgia)"}
-            mainLink={"https://www.facebook.com/gtu.ge"}
-            info2={"2019-10 => 2021-08"}
-          />
-
-          <NanoItem
-            imgSrc={ugLogoBuildPath}
-            title={"Informatics (Bachelor's Degree)"}
-            info1={"The University of Georgia (Tbilisi, Georgia)"}
-            mainLink={"https://www.facebook.com/TheUniversityofGeorgia"}
-            info2={"2014-09 => 2019-09"}
-          />
-        </div>
-      </div>
+      <NanoItem
+        className={"toptalNano"}
+        imgSrc={toptalIconPath}
+        title={
+          <a
+            className="superLinkTitle"
+            target={"_blank"}
+            rel={"noreferrer"}
+            href={"https://www.toptal.com/resume/levan-katsadze"}
+          >
+            Toptal Resume
+          </a>
+        }
+        info1={"Member since September 23, 2022"}
+        mainLink={"https://www.toptal.com/resume/levan-katsadze"}
+        // info2={""}
+      />
       <div className={"bigProjects"}>
         <div className={"bpHead hea"}>LARGE PROJECT(S)</div>
         <hr className={"hr"} />
@@ -275,6 +296,29 @@ const StoryBar = () => {
           />
         </div>
       </div>
+
+      <div className={"edu"}>
+        <div className={"eduHead hea"}>EDUCATION</div>
+        <hr className={"hr"} />
+        <div className={"eduBody"}>
+          <NanoItem
+            imgSrc={gtuCoatOfArmsBuildPath}
+            title={"Web Technologies (Master's Degree)"}
+            info1={"Georgian Technical University (Tbilisi, Georgia)"}
+            mainLink={"https://www.facebook.com/gtu.ge"}
+            info2={"2019-10 => 2021-08"}
+          />
+
+          <NanoItem
+            imgSrc={ugLogoBuildPath}
+            title={"Informatics (Bachelor's Degree)"}
+            info1={"The University of Georgia (Tbilisi, Georgia)"}
+            mainLink={"https://www.facebook.com/TheUniversityofGeorgia"}
+            info2={"2014-09 => 2019-09"}
+          />
+        </div>
+      </div>
+
       <div className={"jobs"}>
         <div className={"jobsHead hea"}>WORK EXPERIENCE</div>
         <hr className={"hr"} />
@@ -290,13 +334,13 @@ const StoryBar = () => {
             }
           />
 
-          <NanoItem
+          {/* <NanoItem
             imgSrc={around25IconPath}
             title={"Frontend Developer (React, TypeScript)"}
             info1={"Around25"}
             mainLink={"https://around25.com"}
             info2={"2021-07 => 2021-10"}
-          />
+          /> */}
 
           <NanoItem
             imgSrc={lingswapIconBuildPath}
