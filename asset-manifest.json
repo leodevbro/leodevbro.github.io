@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fb881dd.chunk.css",
-    "main.js": "/static/js/main.0bb232b2.chunk.js",
-    "main.js.map": "/static/js/main.0bb232b2.chunk.js.map",
+    "main.css": "/static/css/main.3d236eab.chunk.css",
+    "main.js": "/static/js/main.4c003a9d.chunk.js",
+    "main.js.map": "/static/js/main.4c003a9d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -10,13 +10,11 @@
     "static/js/3.1f36ed0d.chunk.js": "/static/js/3.1f36ed0d.chunk.js",
     "static/js/3.1f36ed0d.chunk.js.map": "/static/js/3.1f36ed0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0fb881dd.chunk.css.map": "/static/css/main.0fb881dd.chunk.css.map",
+    "static/css/main.3d236eab.chunk.css.map": "/static/css/main.3d236eab.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
-    "static/media/around25-logo.343ecb86.jpg": "/static/media/around25-logo.343ecb86.jpg",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
     "static/media/exactpro.59813642.png": "/static/media/exactpro.59813642.png",
-    "static/media/facebook-icon.e7c9bf38.svg": "/static/media/facebook-icon.e7c9bf38.svg",
     "static/media/git.f2daa3c8.svg": "/static/media/git.f2daa3c8.svg",
     "static/media/gtu.15edf003.png": "/static/media/gtu.15edf003.png",
     "static/media/lingswap-icon.c104f7fc.png": "/static/media/lingswap-icon.c104f7fc.png",
@@ -27,13 +25,14 @@
     "static/media/photo-leo.385103e0.jpg": "/static/media/photo-leo.385103e0.jpg",
     "static/media/road-crossing.a05231a8.png": "/static/media/road-crossing.a05231a8.png",
     "static/media/tic-tac-toe.4418a710.png": "/static/media/tic-tac-toe.4418a710.png",
+    "static/media/toptal-logo-vector.15d2cb16.svg": "/static/media/toptal-logo-vector.15d2cb16.svg",
     "static/media/trivia-i.431fdefb.png": "/static/media/trivia-i.431fdefb.png",
     "static/media/ug.4997f81f.png": "/static/media/ug.4997f81f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
-    "static/css/main.0fb881dd.chunk.css",
-    "static/js/main.0bb232b2.chunk.js"
+    "static/css/main.3d236eab.chunk.css",
+    "static/js/main.4c003a9d.chunk.js"
   ]
 }
