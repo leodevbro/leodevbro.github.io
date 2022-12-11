@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8faac486.chunk.css",
+    "main.css": "/static/css/main.814dff10.chunk.css",
     "main.js": "/static/js/main.968ef7ac.chunk.js",
     "main.js.map": "/static/js/main.968ef7ac.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
@@ -10,7 +10,7 @@
     "static/js/3.1f36ed0d.chunk.js": "/static/js/3.1f36ed0d.chunk.js",
     "static/js/3.1f36ed0d.chunk.js.map": "/static/js/3.1f36ed0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8faac486.chunk.css.map": "/static/css/main.8faac486.chunk.css.map",
+    "static/css/main.814dff10.chunk.css.map": "/static/css/main.814dff10.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
-    "static/css/main.8faac486.chunk.css",
+    "static/css/main.814dff10.chunk.css",
     "static/js/main.968ef7ac.chunk.js"
   ]
 }
