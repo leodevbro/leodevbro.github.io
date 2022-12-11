@@ -344,7 +344,7 @@ const StoryBar = () => {
           <NanoItem
             imgSrc={`https://secure.img1-fg.wfcdn.com/im/27735505/resize-h600-w600%5Ecompr-r85/6303/63037324/Floor+Tiles+%26+Wall+Tiles.jpg`}
             title={
-              "Landing Page - React, TS, SCSS, Scroll-Driven Video Playback"
+              "Landing With React, TS, SCSS, Scroll-Driven Video Playback"
             }
             info1={"Live Preview"}
             mainLink={"https://react-app-apogee.vercel.app/"}
