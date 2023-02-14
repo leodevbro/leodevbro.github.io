@@ -15,6 +15,7 @@ import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 import lingswapIconBuildPath from "./images/lingswap-icon.png";
 import fireartIconBuildPath from "./images/fireart-logo.png";
+import miniDiaryIconBuildPath from "./images/mini-diary-icon.png";
 // import around25IconPath from "./images/around25-logo.jpg";
 import triviaIconPath from "./images/trivia-i.png";
 import toptalIconPath from "./images/toptal-logo.png";
@@ -235,7 +236,7 @@ const NanoItem: React.FC<{
         <div className={"nanoLinkBox seLink"}>
           {seLink ? (
             <a href={seLink} target={"_blank"} rel={"noreferrer"}>
-              {"Video for some tasks"}
+              {"Video Demo"}
             </a>
           ) : (
             ""
@@ -343,9 +344,7 @@ const StoryBar = () => {
 
           <NanoItem
             imgSrc={`https://secure.img1-fg.wfcdn.com/im/27735505/resize-h600-w600%5Ecompr-r85/6303/63037324/Floor+Tiles+%26+Wall+Tiles.jpg`}
-            title={
-              "Landing With React, TS, SCSS, Scroll-Driven Video Playback"
-            }
+            title={"Landing With React, TS, SCSS, Scroll-Driven Video Playback"}
             info1={"Live Preview"}
             mainLink={"https://react-app-apogee.vercel.app/"}
             info2={`React app, responsive (mobile/tablet/desktop) with smooth sliders, sticky table and scroll-driven video playback.`}
@@ -479,6 +478,15 @@ const StoryBar = () => {
                             "Google Sheets playground for personal music rank"
                         }
                     /> */}
+          <NanoItem
+            imgSrc={miniDiaryIconBuildPath}
+            title={"Mini Diary (Next.js, TypeScript, Styled Components)"}
+            info1={"Source code"}
+            mainLink={"https://github.com/leodevbro/simple-mini-diary"}
+            info2={"Simple mini web diary which uses localStorage as a DB."}
+            seLink={"https://www.youtube.com/watch?v=pUbThsX-ExE"}
+          />
+
           <NanoItem
             imgSrc={ticTacToeIconBuildPath}
             title={"Tic-tac-toe game with React.js"}
