@@ -4,7 +4,7 @@ import mainPhotoBuildPath from "./images/photo-leo.jpg";
 import gtuCoatOfArmsBuildPath from "./images/gtu.png";
 import ugLogoBuildPath from "./images/ug.png";
 import lupiLogoBuildPath from "./images/lupi.png";
-import exactproLogoBuildPath from "./images/exactpro.png";
+// import exactproLogoBuildPath from "./images/exactpro.png";
 import blockmanIconBuildPath from "./images/blockman-icon.png";
 import blockmanReactIconBuildPath from "./images/blockman-react-icon.png";
 // import musicRankIconBuildPath from "./images/music-rank-logo-draft.png";
@@ -15,6 +15,7 @@ import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 import lingswapIconBuildPath from "./images/lingswap-icon.png";
 import fireartIconBuildPath from "./images/fireart-logo.png";
+import reSoftLogoBuildPath from "./images/re-soft-logo_2.png";
 import miniDiaryIconBuildPath from "./images/mini-diary-icon.png";
 // import around25IconPath from "./images/around25-logo.jpg";
 import triviaIconPath from "./images/trivia-i.png";
@@ -126,12 +127,15 @@ const BriefBar = () => {
           <span className={"skill"}>TypeScript</span>
           <span className={"skill"}>JavaScript</span>
           <span className={"skill"}>Next.js</span>
-          <span className={"skill"}>CSS/SCSS Modules</span>
+          <span className={"skill"}>CSS/SCSS</span>
           <span className={"skill"}>Redux Toolkit</span>
+          <span className={"skill"}>Node (NestJS)</span>
+          <span className={"skill"}>TypeORM</span>
           <span className={"skill"}>React Router</span>
           <span className={"skill"}>Git</span>
           <span className={"skill"}>Styled Components</span>
           <span className={"skill"}>Tailwind CSS</span>
+          <span className={"skill"}>React Table (v7)</span>
           <span className={"skill"}>Algorithms</span>
           <span className={"skill"}>Data Structures</span>
           <span className={"skill"}>Math</span>
@@ -200,7 +204,8 @@ const NanoItem: React.FC<{
   info1: string;
   mainLink: string;
   info2?: ReactNode;
-  info3?: ReactNode;
+  info3_stack?: ReactNode;
+  info4_period?: ReactNode;
   showStat?: boolean;
   seLink?: string;
 }> = ({
@@ -209,7 +214,8 @@ const NanoItem: React.FC<{
   title,
   titleMode,
   info1,
-  info3,
+  info3_stack,
+  info4_period,
   mainLink,
   info2,
   showStat,
@@ -243,7 +249,20 @@ const NanoItem: React.FC<{
           )}
         </div>
         {info2 && <div className={"nanoInfo2"}>{info2}</div>}
-        {info3 && <div className={"nanoInfo2"}>{info3}</div>}
+        {info3_stack && (
+          <div
+            style={{
+              fontStyle: "normal",
+              color: "rgb(80 2 189 / 0.8)",
+              fontSize: "15px",
+              fontWeight: 450,
+            }}
+            className={"nanoInfo2"}
+          >
+            {info3_stack}
+          </div>
+        )}
+        {info4_period && <div className={"nanoInfo2"}>{info4_period}</div>}
       </div>
     </div>
   );
@@ -329,7 +348,7 @@ const StoryBar = () => {
                 {"Video Instruction"}
               </a>
             }
-            info3={
+            info3_stack={
               <a
                 target={"_blank"}
                 rel={"noreferrer"}
@@ -348,7 +367,7 @@ const StoryBar = () => {
             info1={"Live Preview"}
             mainLink={"https://react-app-apogee.vercel.app/"}
             info2={`React app, responsive (mobile/tablet/desktop) with smooth sliders, sticky table and scroll-driven video playback.`}
-            info3={
+            info3_stack={
               <a
                 target={"_blank"}
                 rel={"noreferrer"}
@@ -388,11 +407,31 @@ const StoryBar = () => {
         <hr className={"hr"} />
         <div className={"jobsBody"}>
           <NanoItem
+            imgSrc={reSoftLogoBuildPath}
+            title={"Fullstack Developer (Next.js, NestJS, TypeScript)"}
+            info1={"Re:Soft"}
+            mainLink={"https://www.resoft.space/"}
+            info2={
+              "Building educational software project with multiple user roles. Optimizing React.js rendering, working with SQL database with the help of TypeORM. Implementing new features, fixing bugs and maintaining maximum type safety with TypeScript."
+            }
+            info3_stack={
+              "Stack: React (Next.js), Node (NestJS), TypeScript, JavaScript, TypeORM, Redux Toolkit, CSS, SCSS, Tailwind, Styled Components."
+            }
+            info4_period={"2023-01 => Present"}
+          />
+
+          <NanoItem
             imgSrc={fireartIconBuildPath}
             title={"Frontend Developer (React, TypeScript)"}
             info1={"Fireart"}
             mainLink={"https://fireart.studio"}
-            info2={"2021-11 => 2022-08"}
+            info2={
+              "Developed a responsive (mobile/tablet/desktop) web app for tiles and stones product sales with multiple user roles. Built two landing pages for tiles and stones product sales from Figma visuals, maintaining a pixel-perfect match with dynamic, responsive styles and advanced functionalities, like smooth sliders and scroll-driven video playback."
+            }
+            info3_stack={
+              "Stack: React.js, TypeScript, JavaScript, Redux Toolkit, CSS, SCSS, React Table."
+            }
+            info4_period={"2021-11 => 2022-08"}
             seLink={
               "https://www.youtube.com/watch?v=K6k5jTGA2AA&list=PL-YmJSpphBa5JkwwtICmHP5Uz23PQIYBy&index=6"
             }
@@ -411,27 +450,42 @@ const StoryBar = () => {
             title={"Frontend Developer (React, TypeScript)"}
             info1={"LingSwap project by Iain Watt"}
             mainLink={"https://www.linkedin.com/in/iainjameswatt"}
-            info2={"2021-06 => 2021-10"}
+            info2={
+              "Developed a web app as a platform for a language-learning service. Provided some new ideas about how a language-learning website would work better and what kind of data structures would be more efficient."
+            }
+            info3_stack={
+              "Stack: React, TypeScript, JavaScript, Git, CSS, SCSS."
+            }
+            info4_period={"2021-06 => 2021-10"}
           />
 
           <NanoItem
             imgSrc={lupiLogoBuildPath}
             title={"Frontend Developer (React, TypeScript)"}
             info1={"Lupi AI - ლუპი აი (Tbilisi, Georgia)"}
-            mainLink={"https://www.facebook.com/lupiapp"}
-            info2={"2020-10 => 2021-05 (www.tvschool.ge)"}
+            mainLink={"https://www.tvschool.ge"}
+            info2={
+              "Developed a remote schooling web app (www.tvschool.ge) for teachers and students to manage grades, tasks, communication, and so on. Solved bugs and managed the entire production system with thousands of users from hundreds of schools in Georgia."
+            }
+            info3_stack={
+              "Stack: React, TypeScript, JavaScript, CSS, LESS, NestJS."
+            }
+            info4_period={"2020-10 => 2021-05"}
             seLink={
               "https://www.youtube.com/watch?v=viqJmaeFP-g&list=PL-YmJSpphBa5mCQKeRTK5m3Bijc6_jB1s&index=20"
             }
           />
 
-          <NanoItem
+          {/* <NanoItem
             imgSrc={exactproLogoBuildPath}
             title={"Software Tester (QA Of Stock Exchanges)"}
             info1={"Exactpro Systems (Tbilisi, Georgia)"}
             mainLink={"https://www.linkedin.com/company/exactpro-systems-llc/"}
-            info2={"2020-02 => 2020-09"}
-          />
+            info2={
+              "Exactpro ert e dfh d fgfdhfghfg fhfghfg fhgf hfg hfgh fgh fgh fgh gf hfgh ggfh "
+            }
+            info3_stack={"2020-02 => 2020-09"}
+          /> */}
         </div>
       </div>
 
