@@ -15,6 +15,7 @@ import ticTacToeIconBuildPath from "./images/tic-tac-toe.png";
 import roadCrossingIconBuildPath from "./images/road-crossing.png";
 import lingswapIconBuildPath from "./images/lingswap-icon.png";
 import fireartIconBuildPath from "./images/fireart-logo.png";
+import momentickIconBuildPath from "./images/momentick-logo-small.png";
 import reSoftLogoBuildPath from "./images/re-soft-logo_2.png";
 import miniDiaryIconBuildPath from "./images/mini-diary-icon.png";
 // import around25IconPath from "./images/around25-logo.jpg";
@@ -127,13 +128,13 @@ const BriefBar = () => {
           <span className={"skill"}>TypeScript</span>
           <span className={"skill"}>JavaScript</span>
           <span className={"skill"}>Next.js</span>
+          <span className={"skill"}>Styled Components</span>
           <span className={"skill"}>CSS/SCSS</span>
           <span className={"skill"}>Redux Toolkit</span>
           <span className={"skill"}>Node (NestJS)</span>
           <span className={"skill"}>TypeORM</span>
           <span className={"skill"}>React Router</span>
           <span className={"skill"}>Git</span>
-          <span className={"skill"}>Styled Components</span>
           <span className={"skill"}>Tailwind CSS</span>
           <span className={"skill"}>React Table (v7)</span>
           <span className={"skill"}>Algorithms</span>
@@ -406,6 +407,23 @@ const StoryBar = () => {
         <div className={"jobsHead hea"}>WORK EXPERIENCE</div>
         <hr className={"hr"} />
         <div className={"jobsBody"}>
+          <NanoItem
+            imgSrc={momentickIconBuildPath}
+            title={"Frontend Developer (React/NextJS, TypeScript)"}
+            info1={"Momentick"}
+            mainLink={"https://www.momentick.com/"}
+            info2={
+              "Developed a wep app that monitors greenhouse gas emission measurements across the entire globe. It is designed to have many registered users. The web app has integrated MapBox map with MapBox API and the users can see all their interest areas on the map with chart and measurements."
+            }
+            info3_stack={
+              "Stack: React.js (Next.js), TypeScript, JavaScript, Redux Toolkit, Styled Components, CSS, MapBox, Recharts, Formik, REST API."
+            }
+            info4_period={"2023-03 => Present"}
+            seLink={
+              "https://www.youtube.com/watch?v=hmbX68QABxA&list=PL-YmJSpphBa5h4tnMSlJkKkVz9KTQlq66&index=7"
+            }
+          />
+
           <NanoItem
             imgSrc={reSoftLogoBuildPath}
             title={"Fullstack Developer (Next.js, NestJS, TypeScript)"}
