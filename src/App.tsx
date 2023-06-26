@@ -435,7 +435,7 @@ const StoryBar = () => {
             info3_stack={
               "Stack: React (Next.js), Node (NestJS), TypeScript, JavaScript, TypeORM, Redux Toolkit, CSS, SCSS, Tailwind, Styled Components."
             }
-            info4_period={"2023-01 => Present"}
+            info4_period={"2023-01 => 2023-06"}
           />
 
           <NanoItem
