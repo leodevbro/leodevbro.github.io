@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.814dff10.chunk.css",
-    "main.js": "/static/js/main.b00efd3d.chunk.js",
-    "main.js.map": "/static/js/main.b00efd3d.chunk.js.map",
+    "main.js": "/static/js/main.ca427975.chunk.js",
+    "main.js.map": "/static/js/main.ca427975.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -12,6 +12,7 @@
     "index.html": "/index.html",
     "static/css/main.814dff10.chunk.css.map": "/static/css/main.814dff10.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
+    "static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg": "/static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
     "static/media/calories-icon.59462719.jpg": "/static/media/calories-icon.59462719.jpg",
@@ -24,7 +25,6 @@
     "static/media/mail.47d0083a.svg": "/static/media/mail.47d0083a.svg",
     "static/media/mini-diary-icon.870466f3.png": "/static/media/mini-diary-icon.870466f3.png",
     "static/media/momentick-logo-small.f634fa4a.png": "/static/media/momentick-logo-small.f634fa4a.png",
-    "static/media/photo-leo.385103e0.jpg": "/static/media/photo-leo.385103e0.jpg",
     "static/media/re-soft-logo_2.8d824abe.png": "/static/media/re-soft-logo_2.8d824abe.png",
     "static/media/road-crossing.a05231a8.png": "/static/media/road-crossing.a05231a8.png",
     "static/media/tic-tac-toe.4418a710.png": "/static/media/tic-tac-toe.4418a710.png",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
     "static/css/main.814dff10.chunk.css",
-    "static/js/main.b00efd3d.chunk.js"
+    "static/js/main.ca427975.chunk.js"
   ]
 }
