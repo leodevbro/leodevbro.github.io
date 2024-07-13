@@ -382,28 +382,6 @@ const StoryBar = () => {
         </div>
       </div>
 
-      <div className={'edu'}>
-        <div className={'eduHead hea'}>EDUCATION</div>
-        <hr className={'hr'} />
-        <div className={'eduBody'}>
-          <NanoItem
-            imgSrc={gtuCoatOfArmsBuildPath}
-            title={"Web Technologies (Master's Degree)"}
-            info1={'Georgian Technical University (Tbilisi, Georgia)'}
-            mainLink={'https://www.facebook.com/gtu.ge'}
-            info2={'2019-10 => 2021-08'}
-          />
-
-          <NanoItem
-            imgSrc={ugLogoBuildPath}
-            title={"Informatics (Bachelor's Degree)"}
-            info1={'The University of Georgia (Tbilisi, Georgia)'}
-            mainLink={'https://www.facebook.com/TheUniversityofGeorgia'}
-            info2={'2014-09 => 2019-09'}
-          />
-        </div>
-      </div>
-
       <div className={'jobs'}>
         <div className={'jobsHead hea'}>WORK EXPERIENCE</div>
         <hr className={'hr'} />
@@ -597,6 +575,29 @@ const StoryBar = () => {
                     /> */}
         </div>
       </div>
+
+      <div className={'edu'}>
+        <div className={'eduHead hea'}>EDUCATION</div>
+        <hr className={'hr'} />
+        <div className={'eduBody'}>
+          <NanoItem
+            imgSrc={gtuCoatOfArmsBuildPath}
+            title={"Web Technologies (Master's Degree)"}
+            info1={'Georgian Technical University (Tbilisi, Georgia)'}
+            mainLink={'https://www.facebook.com/gtu.ge'}
+            info2={'2019-10 => 2021-08'}
+          />
+
+          <NanoItem
+            imgSrc={ugLogoBuildPath}
+            title={"Informatics (Bachelor's Degree)"}
+            info1={'The University of Georgia (Tbilisi, Georgia)'}
+            mainLink={'https://www.facebook.com/TheUniversityofGeorgia'}
+            info2={'2014-09 => 2019-09'}
+          />
+        </div>
+      </div>
+
       <div className={'achievements'}>
         <div className={'achHead hea'}>ACHIEVEMENTS</div>
         <hr className={'hr'} />
