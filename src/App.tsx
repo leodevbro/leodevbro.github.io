@@ -23,7 +23,7 @@ import miniDiaryIconBuildPath from './images/mini-diary-icon.png';
 // import around25IconPath from "./images/around25-logo.jpg";
 import triviaIconPath from './images/trivia-i.png';
 import toptalIconPath from './images/toptal-logo.png';
-import calorieIconPath from './images/calories-icon.jpg';
+// import calorieIconPath from './images/calories-icon.jpg';
 
 import { ReactComponent as MyLocationIcon } from './images/location.svg';
 // import { ReactComponent as MyFacebookIcon } from "./images/facebook-icon.svg";
