@@ -8,6 +8,7 @@ import lupiLogoBuildPath from './images/lupi.png';
 // import exactproLogoBuildPath from "./images/exactpro.png";
 import blockmanIconBuildPath from './images/blockman-icon.png';
 import blockmanReactIconBuildPath from './images/blockman-react-icon.png';
+import jiffyLogoBuildPath from './images/jiffy-logo.png';
 // import musicRankIconBuildPath from "./images/music-rank-logo-draft.png";
 // import musicRankSheetsIconBuildPath from "./images/music-rank-sheets.png";
 import emojiIconBuildPath from './images/emoji.png';
@@ -329,9 +330,46 @@ const StoryBar = () => {
             info2={
               "Really wanted to find such feature in code editors, couldn't find anywhere, so I dedicated about 6 months to create it myself."
             }
+            info3_stack={
+              <a
+                target={'_blank'}
+                rel={'noreferrer'}
+                href={'https://github.com/leodevbro/vscode-blockman'}
+              >
+                Github Repo
+              </a>
+            }
           />
 
           <NanoItem
+            imgSrc={'https://ph-files.imgix.net/69d4a575-6a03-4fb2-807e-5344bd36e469.png'}
+            title={
+              <a
+                target={'_blank'}
+                rel={'noreferrer'}
+                href={'https://www.producthunt.com/products/gmail-mbox-stats'}
+              >
+                gmail-mbox-stats
+              </a>
+            }
+            seLink={'https://www.youtube.com/watch?v=KKU84ogffeM'}
+            info1={''}
+            mainLink={''}
+            info2={
+              "Many people have many thousands of mails in Gmail, and they want to find the most frequent senders to be able to quickly clean up mailbox. Gmail does not have such feature to sort senders by frequency. I created a special software and a video tutorial for it."
+            }
+            info3_stack={
+              <a
+                target={'_blank'}
+                rel={'noreferrer'}
+                href={'https://github.com/leodevbro/gmail-mbox-stats'}
+              >
+                Github Repo
+              </a>
+            }
+          />
+
+          {/* <NanoItem
             imgSrc={calorieIconPath}
             title={'Calorie Tracking App With React And Firebase Auth/DB'}
             info1={'Live App'}
@@ -361,7 +399,7 @@ const StoryBar = () => {
                 Github Repo
               </a>
             }
-          />
+          /> */}
 
           <NanoItem
             imgSrc={`https://secure.img1-fg.wfcdn.com/im/27735505/resize-h600-w600%5Ecompr-r85/6303/63037324/Floor+Tiles+%26+Wall+Tiles.jpg`}
@@ -387,6 +425,23 @@ const StoryBar = () => {
         <hr className={'hr'} />
         <div className={'jobsBody'}>
           <NanoItem
+            imgSrc={jiffyLogoBuildPath}
+            title={'Frontend Developer (JavaScript, ERB, CSS, SCSS, SVG)'}
+            info1={'Jiffy.com'}
+            mainLink={'https://www.jiffy.com/'}
+            info2={
+              `* Developed and maintained an online store website for t-shirts, jiffy.com, which has a t-shirt mockup feature with any image the user provides. \n * Developed a Canva-like editor app, enabling users to create various vector designs using SVG and Fabric.js canvas toolset. \n * Created a special svg-path-text custom class named NobleText within Fabric.js general object to ensure the text bounding box is always accurate. Implemented special warp effects on the SVG text and many other manipulations.`
+            }
+            info3_stack={
+              'Stack: JavaScript, ERB, CSS, SCSS, FabricJS, SVG.'
+            }
+            info4_period={'2023-12 => 2024-06'}
+            seLink={
+              ''
+            }
+          />
+
+          <NanoItem
             imgSrc={momentickIconBuildPath}
             title={'Frontend Developer (React/NextJS, TypeScript)'}
             info1={'Momentick'}
@@ -397,7 +452,7 @@ const StoryBar = () => {
             info3_stack={
               'Stack: React.js (Next.js), TypeScript, JavaScript, Redux Toolkit, Styled Components, CSS, MapBox, Recharts, Formik, REST API.'
             }
-            info4_period={'2023-03 => Present'}
+            info4_period={'2023-03 => 2023-11'}
             seLink={
               'https://www.youtube.com/watch?v=hmbX68QABxA&list=PL-YmJSpphBa5h4tnMSlJkKkVz9KTQlq66&index=7'
             }
