@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.814dff10.chunk.css",
-    "main.js": "/static/js/main.ca427975.chunk.js",
-    "main.js.map": "/static/js/main.ca427975.chunk.js.map",
+    "main.js": "/static/js/main.9947a33b.chunk.js",
+    "main.js.map": "/static/js/main.9947a33b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -15,9 +15,9 @@
     "static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg": "/static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
-    "static/media/calories-icon.59462719.jpg": "/static/media/calories-icon.59462719.jpg",
     "static/media/git.f2daa3c8.svg": "/static/media/git.f2daa3c8.svg",
     "static/media/gtu.15edf003.png": "/static/media/gtu.15edf003.png",
+    "static/media/jiffy-logo.0ecada9f.png": "/static/media/jiffy-logo.0ecada9f.png",
     "static/media/lingswap-icon.c104f7fc.png": "/static/media/lingswap-icon.c104f7fc.png",
     "static/media/linkedin.c4edbd80.svg": "/static/media/linkedin.c4edbd80.svg",
     "static/media/location.4e26f4a1.svg": "/static/media/location.4e26f4a1.svg",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
     "static/css/main.814dff10.chunk.css",
-    "static/js/main.ca427975.chunk.js"
+    "static/js/main.9947a33b.chunk.js"
   ]
 }
