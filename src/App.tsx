@@ -194,8 +194,8 @@ const BlockmanStat: React.FC<{
       className="blockmanStatA"
     >
       <img
-        src="https://img.shields.io/visual-studio-marketplace/i/leodevbro.blockman"
-        // src="https://vsmarketplacebadges.dev/installs-short/leodevbro.blockman.png"
+        // src="https://img.shields.io/visual-studio-marketplace/i/leodevbro.blockman"
+        src="https://vsmarketplacebadges.dev/installs-short/leodevbro.blockman.png"
         alt="Blockman stats"
       />
     </a>
