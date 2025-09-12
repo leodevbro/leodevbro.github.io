@@ -23,6 +23,7 @@ import miniDiaryIconBuildPath from './images/mini-diary-icon.png';
 // import around25IconPath from "./images/around25-logo.jpg";
 import triviaIconPath from './images/trivia-i.png';
 import toptalIconPath from './images/toptal-logo.png';
+import SteadyIQIconBuildPath from './images/siq-logo.png';
 // import calorieIconPath from './images/calories-icon.jpg';
 
 import { ReactComponent as MyLocationIcon } from './images/location.svg';
@@ -130,18 +131,19 @@ const BriefBar = () => {
           <span className={'skill'}>TypeScript</span>
           <span className={'skill'}>JavaScript</span>
           <span className={'skill'}>Next.js</span>
-          <span className={'skill'}>Styled Components</span>
-          <span className={'skill'}>CSS/SCSS</span>
-          <span className={'skill'}>Redux Toolkit</span>
+          <span className={'skill'}>Pixel-perfect/Responsive design</span>
+          <span className={'skill'}>FP-TS</span>
+          <span className={'skill'}>Chakra UI</span>
+          <span className={'skill'}>Claude AI CLI, Figma MCP...</span>
+          <span className={'skill'}>Zustand, Redux Toolkit...</span>
           <span className={'skill'}>Node (NestJS)</span>
           <span className={'skill'}>TypeORM</span>
-          <span className={'skill'}>React Router</span>
-          <span className={'skill'}>Git</span>
+          <span className={'skill'}>SVG manipulations</span>
+          <span className={'skill'}>Git, GitHub...</span>
           <span className={'skill'}>Tailwind CSS</span>
-          <span className={'skill'}>React Table (v7)</span>
+          <span className={'skill'}>Lingui</span>
           <span className={'skill'}>Algorithms</span>
           <span className={'skill'}>Data Structures</span>
-          <span className={'skill'}>Math</span>
         </div>
       </div>
       <div className={'langBox bbItem'}>
@@ -193,6 +195,7 @@ const BlockmanStat: React.FC<{
     >
       <img
         src="https://img.shields.io/visual-studio-marketplace/i/leodevbro.blockman"
+        // src="https://vsmarketplacebadges.dev/installs-short/leodevbro.blockman.png"
         alt="Blockman stats"
       />
     </a>
@@ -425,12 +428,37 @@ const StoryBar = () => {
         <hr className={'hr'} />
         <div className={'jobsBody'}>
           <NanoItem
+            imgSrc={SteadyIQIconBuildPath}
+            title={'Frontend Developer (FP-TS, React, TypeScript, JavaScript)'}
+            info1={'steadyiq.com (US based company)'}
+            mainLink={'https://www.steadyiq.com'}
+            info2={
+              <div>
+                <p>* Developed a web app to manage income sources for many users, for both mobile and desktop screens. Fixed bugs and maintained a complex front-end codebase with clean coding practices.</p>
+
+                <p>* Used fp-ts and implemented advanced custom TypeScript utilities like createSmartEnum (safer than Zod enum utility) to make the development experience much more comfortable and faster.</p>
+              </div>
+            }
+            info3_stack={
+              'Stack: FP-TS, React, TypeScript, JavaScript, Zustand, Chakra UI.'
+            }
+            info4_period={'2024-08 => 2025-05'}
+            seLink={
+              ''
+            }
+          />
+
+          <NanoItem
             imgSrc={jiffyLogoBuildPath}
             title={'Frontend Developer (JavaScript, ERB, CSS, SCSS, SVG)'}
-            info1={'Jiffy.com'}
-            mainLink={'https://www.jiffy.com/'}
+            info1={'Jiffy.com (US based company)'}
+            mainLink={'https://www.jiffy.com'}
             info2={
-              `* Developed and maintained an online store website for t-shirts, jiffy.com, which has a t-shirt mockup feature with any image the user provides. \n * Developed a Canva-like editor app, enabling users to create various vector designs using SVG and Fabric.js canvas toolset. \n * Created a special svg-path-text custom class named NobleText within Fabric.js general object to ensure the text bounding box is always accurate. Implemented special warp effects on the SVG text and many other manipulations.`
+              <div>
+                <p>* Developed and maintained an online store website for t-shirts, jiffy.com, which has a t-shirt mockup feature with any image the user provides.</p>
+                <p>* Developed a Canva-like editor app, enabling users to create various vector designs using SVG and Fabric.js canvas toolset.</p>
+                <p>* Created a special svg-path-text custom class named NobleText within Fabric.js general object to ensure the text bounding box is always accurate. Implemented special warp effects on the SVG text and many other manipulations.</p>
+              </div>
             }
             info3_stack={
               'Stack: JavaScript, ERB, CSS, SCSS, FabricJS, SVG.'
@@ -444,8 +472,8 @@ const StoryBar = () => {
           <NanoItem
             imgSrc={momentickIconBuildPath}
             title={'Frontend Developer (React/NextJS, TypeScript)'}
-            info1={'Momentick'}
-            mainLink={'https://www.momentick.com/'}
+            info1={'Momentick (Israel based company)'}
+            mainLink={'https://www.momentick.com'}
             info2={
               'Developed a wep app that monitors greenhouse gas emission measurements across the entire globe. It is designed to have many registered users. The web app has integrated MapBox map with MapBox API and the users can see all their interest areas on the map with chart and measurements.'
             }
@@ -461,7 +489,7 @@ const StoryBar = () => {
           <NanoItem
             imgSrc={reSoftLogoBuildPath}
             title={'Fullstack Developer (Next.js, NestJS, TypeScript)'}
-            info1={'Re:Soft'}
+            info1={'Re:Soft (Tbilisi, Georgia)'}
             mainLink={'https://www.resoft.space/'}
             info2={
               'Building educational software project with multiple user roles. Optimizing React.js rendering, working with SQL database with the help of TypeORM. Implementing new features, fixing bugs and maintaining maximum type safety with TypeScript.'
@@ -475,7 +503,7 @@ const StoryBar = () => {
           <NanoItem
             imgSrc={fireartIconBuildPath}
             title={'Frontend Developer (React, TypeScript)'}
-            info1={'Fireart'}
+            info1={'Fireart (Poland based company)'}
             mainLink={'https://fireart.studio'}
             info2={
               'Developed a responsive (mobile/tablet/desktop) web app for tiles and stones product sales with multiple user roles. Built two landing pages for tiles and stones product sales from Figma visuals, maintaining a pixel-perfect match with dynamic, responsive styles and advanced functionalities, like smooth sliders and scroll-driven video playback.'
@@ -500,7 +528,7 @@ const StoryBar = () => {
           <NanoItem
             imgSrc={lingswapIconBuildPath}
             title={'Frontend Developer (React, TypeScript)'}
-            info1={'LingSwap project by Iain Watt'}
+            info1={'LingSwap project by Iain Watt (UK based)'}
             mainLink={'https://www.linkedin.com/in/iainjameswatt'}
             info2={
               'Developed a web app as a platform for a language-learning service. Provided some new ideas about how a language-learning website would work better and what kind of data structures would be more efficient.'
