@@ -24,6 +24,7 @@ import miniDiaryIconBuildPath from './images/mini-diary-icon.png';
 import triviaIconPath from './images/trivia-i.png';
 import toptalIconPath from './images/toptal-logo.png';
 import SteadyIQIconBuildPath from './images/siq-logo.png';
+import TealbookIconBuildPath from './images/tealbook_logo.jpg';
 // import calorieIconPath from './images/calories-icon.jpg';
 
 import { ReactComponent as MyLocationIcon } from './images/location.svg';
@@ -41,7 +42,7 @@ const BasicInfo = () => {
       <div className={'basicInfo'}>
         <div style={{ textAlign: "center", marginBottom: "10px" }}>
           <div className={'name'} style={{ textAlign: "center", fontSize: "23px", fontWeight: 'bold' }}>
-            Levan Katsadze (ლევან კაცაძე)
+            <span>Levan Katsadze</span> <span style={{ fontFamily: "Segoe UI", fontSize: "18px" }}>(ლევან კაცაძე)</span>
           </div>
 
           <div className={'prof'} style={{ fontSize: "20px" }}>Software Developer</div>
@@ -370,7 +371,7 @@ const StoryBar = () => {
               <a
                 target={'_blank'}
                 rel={'noreferrer'}
-                href={'https://www.producthunt.com/products/gmail-mbox-stats'}
+                href={'https://www.npmjs.com/package/gmail-mbox-stats'}
               >
                 gmail-mbox-stats
               </a>
@@ -447,6 +448,26 @@ const StoryBar = () => {
         <div className={'jobsHead hea'}>WORK EXPERIENCE</div>
         <hr className={'hr'} />
         <div className={'jobsBody'}>
+          <NanoItem
+            imgSrc={TealbookIconBuildPath}
+            title={'Senior Front-End Developer (React, TypeScript, MUI, Tailwind)'}
+            info1={'tealbook.com (Canada based company)'}
+            mainLink={'https://www.tealbook.com'}
+            info2={
+              <div>
+                <p>* Developed a data intelligence app to help companies easily manage their suppliers by providing a large database of all kinds of legal entities worldwide.</p>
+
+                <p>* Maintained and improved the frontend codebase to be much more type-safe and much more organized than before. Fixed many bugs and improved overall user experience by implementing new design and functionality.</p>
+              </div>
+            }
+            info3_stack={
+              'Stack: React, TypeScript, MUI, Tailwind, Jotai, GraphQL.'
+            }
+            info4_period={'2025-10 => 2026-01'}
+            seLink={
+              ''
+            }
+          />
           <NanoItem
             imgSrc={SteadyIQIconBuildPath}
             title={'Frontend Developer (FP-TS, React, TypeScript, JavaScript)'}
@@ -632,14 +653,15 @@ const StoryBar = () => {
                             "Google Sheets playground for personal music rank"
                         }
                     /> */}
-          <NanoItem
+
+          {/* <NanoItem
             imgSrc={miniDiaryIconBuildPath}
             title={'Mini Diary (Next.js, TypeScript, Styled Components)'}
             info1={'Source code'}
             mainLink={'https://github.com/leodevbro/simple-mini-diary'}
             info2={'Simple mini web diary which uses localStorage as a DB.'}
             seLink={'https://www.youtube.com/watch?v=pUbThsX-ExE'}
-          />
+          /> */}
 
           <NanoItem
             imgSrc={ticTacToeIconBuildPath}
@@ -688,7 +710,7 @@ const StoryBar = () => {
             title={"Web Technologies (Master's Degree)"}
             info1={'Georgian Technical University (Tbilisi, Georgia)'}
             mainLink={'https://www.facebook.com/gtu.ge'}
-            info2={'2019-10 => 2021-08'}
+            info2={'2019 => 2021'}
           />
 
           <NanoItem
@@ -696,7 +718,7 @@ const StoryBar = () => {
             title={"Informatics (Bachelor's Degree)"}
             info1={'The University of Georgia (Tbilisi, Georgia)'}
             mainLink={'https://www.facebook.com/TheUniversityofGeorgia'}
-            info2={'2014-09 => 2019-09'}
+            info2={'2013 => 2019'}
           />
         </div>
       </div>
