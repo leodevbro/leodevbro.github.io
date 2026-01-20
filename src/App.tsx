@@ -33,68 +33,85 @@ import { ReactComponent as ToptalIconSvg } from './images/toptal-logo-vector.svg
 import { ReactComponent as MyGitIcon } from './images/git.svg';
 import { ReactComponent as MyLinkedinIcon } from './images/linkedin.svg';
 import './App.scss';
+import { ToptalBadge, toptalProfileUrl } from './ToptalBadge';
 
 const BasicInfo = () => {
   return (
-    <div className={'basicInfo'}>
-      <div className={'i1'}>
+    <div>
+      <div className={'basicInfo'}>
+        <div style={{ textAlign: "center", marginBottom: "10px" }}>
+          <div className={'name'} style={{ textAlign: "center", fontSize: "23px", fontWeight: 'bold' }}>
+            Levan Katsadze (ლევან კაცაძე)
+          </div>
+
+          <div className={'prof'} style={{ fontSize: "20px" }}>Software Developer</div>
+        </div>
+
+        {/* <div className={'i1'}>
         <div className={'name'}>Levan Katsadze</div>
         <div className={'nameGeo'}>ლევან კაცაძე</div>
         <div className={'prof'}>Software Developer</div>
         <div className={'birth'}>1995-03-03</div>
-      </div>
+      </div> */}
 
-      <div className={'i2'}>
-        <div className={'toptal i2child'}>
-          <span className={'span'}>
-            <ToptalIconSvg className={'toptalIcon icon'} />
-          </span>
-          <span className={'span'}>
-            <a
-              href="https://www.toptal.com/resume/levan-katsadze"
-              target="_blank"
-              rel="noreferrer"
-            >
-              toptal.com/resume/levan-katsadze
-            </a>
-          </span>
-        </div>
-        <div className={'mail i2child'}>
-          <span className={'span'}>
-            <MyMailIcon className={'mailIcon icon'} />
-          </span>
-          <span className={'span'}>leodevbro@gmail.com</span>
-        </div>
-        <div className={'github i2child'}>
-          <span className={'span'}>
-            <MyGitIcon className={'gitIcon icon'} />
-          </span>
-          <span className={'span'}>
-            <a
-              href="https://github.com/leodevbro"
-              target="_blank"
-              rel="noreferrer"
-            >
-              github.com/leodevbro
-            </a>
-          </span>
-        </div>
-        <div className={'github i2child'}>
-          <span className={'span'}>
-            <MyLinkedinIcon className={'linkedinIcon icon'} />
-          </span>
-          <span className={'span'}>
-            <a
-              href="https://www.linkedin.com/in/leodevbro/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/leodevbro
-            </a>
-          </span>
-        </div>
+        <div className={'i2'}>
 
-        {/* <div className={"facebook i2child"}>
+
+          <div className={'birth'} style={{ marginBottom: '2px' }}>
+            <span style={{ marginRight: '6px', marginLeft: '4px' }}>●</span>
+            <span>1995-03-03</span>
+          </div>
+
+          <div className={'toptal i2child'}>
+            <span className={'span'}>
+              <ToptalIconSvg className={'toptalIcon icon'} />
+            </span>
+            <span className={'span'}>
+              <a
+                href={toptalProfileUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                toptal.com/resume/levan-katsadze
+              </a>
+            </span>
+          </div>
+          <div className={'mail i2child'}>
+            <span className={'span'}>
+              <MyMailIcon className={'mailIcon icon'} />
+            </span>
+            <span className={'span'}>leodevbro@gmail.com</span>
+          </div>
+          <div className={'github i2child'}>
+            <span className={'span'}>
+              <MyGitIcon className={'gitIcon icon'} />
+            </span>
+            <span className={'span'}>
+              <a
+                href="https://github.com/leodevbro"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/leodevbro
+              </a>
+            </span>
+          </div>
+          <div className={'github i2child'}>
+            <span className={'span'}>
+              <MyLinkedinIcon className={'linkedinIcon icon'} />
+            </span>
+            <span className={'span'}>
+              <a
+                href="https://www.linkedin.com/in/leodevbro/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                linkedin.com/in/leodevbro
+              </a>
+            </span>
+          </div>
+
+          {/* <div className={"facebook i2child"}>
           <span className={"span"}>
             <MyFacebookIcon className={"facebookIcon icon"} />
           </span>
@@ -109,11 +126,12 @@ const BasicInfo = () => {
           </span>
         </div> */}
 
-        <div className={'location i2child'}>
-          <span className={'span'}>
-            <MyLocationIcon className={'locationIcon icon'} />
-          </span>
-          <span className={'span'}>Tbilisi, Georgia</span>
+          <div className={'location i2child'}>
+            <span className={'span'}>
+              <MyLocationIcon className={'locationIcon icon'} />
+            </span>
+            <span className={'span'}>Tbilisi, Georgia</span>
+          </div>
         </div>
       </div>
     </div>
@@ -227,56 +245,57 @@ const NanoItem: React.FC<{
   showStat,
   seLink,
 }) => {
-  return (
-    <div className={`nanoItem ${className}`}>
-      <div className={'imgBox'}>
-        <img className={'logo img'} src={imgSrc} alt="nano logo" />
-      </div>
-      <div className={'infoBox'}>
-        <div className={'nanoTitle'}>
-          <span>{title}</span> <span>{showStat && <BlockmanStat />}</span>
+    return (
+      <div className={`nanoItem ${className}`}>
+        <div className={'imgBox'}>
+          <img className={'logo img'} src={imgSrc} alt="nano logo" />
         </div>
-        <div className={'nanoLinkBox'}>
-          {mainLink ? (
-            <a href={mainLink} target={'_blank'} rel={'noreferrer'}>
-              {info1}
-            </a>
-          ) : (
-            info1
-          )}
-        </div>
-        <div className={'nanoLinkBox seLink'}>
-          {seLink ? (
-            <a href={seLink} target={'_blank'} rel={'noreferrer'}>
-              {'Video Demo'}
-            </a>
-          ) : (
-            ''
-          )}
-        </div>
-        {info2 && <div className={'nanoInfo2'}>{info2}</div>}
-        {info3_stack && (
-          <div
-            style={{
-              fontStyle: 'normal',
-              color: 'rgb(80 2 189 / 0.8)',
-              fontSize: '15px',
-              fontWeight: 450,
-            }}
-            className={'nanoInfo2'}
-          >
-            {info3_stack}
+        <div className={'infoBox'}>
+          <div className={'nanoTitle'}>
+            <span>{title}</span> <span>{showStat && <BlockmanStat />}</span>
           </div>
-        )}
-        {info4_period && <div className={'nanoInfo2'}>{info4_period}</div>}
+          <div className={'nanoLinkBox'}>
+            {mainLink ? (
+              <a href={mainLink} target={'_blank'} rel={'noreferrer'}>
+                {info1}
+              </a>
+            ) : (
+              info1
+            )}
+          </div>
+          <div className={'nanoLinkBox seLink'}>
+            {seLink ? (
+              <a href={seLink} target={'_blank'} rel={'noreferrer'}>
+                {'Video Demo'}
+              </a>
+            ) : (
+              ''
+            )}
+          </div>
+          {info2 && <div className={'nanoInfo2'}>{info2}</div>}
+          {info3_stack && (
+            <div
+              style={{
+                fontStyle: 'normal',
+                color: 'rgb(80 2 189 / 0.8)',
+                fontSize: '15px',
+                fontWeight: 450,
+              }}
+              className={'nanoInfo2'}
+            >
+              {info3_stack}
+            </div>
+          )}
+          {info4_period && <div className={'nanoInfo2'}>{info4_period}</div>}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
 const StoryBar = () => {
   return (
     <div className={'storyBar'}>
+      {/*
       <div className="wrapOfToptalNano">
         <NanoItem
           className={'toptalNano'}
@@ -306,6 +325,7 @@ const StoryBar = () => {
           }
         />
       </div>
+      */}
 
       <div className={'bigProjects'}>
         <div className={'bpHead hea'}>LARGE SOLO PROJECTS</div>
@@ -766,6 +786,7 @@ function App() {
         <header className="header">
           <img className={'img'} src={mainPhoto2BuildPath} alt="main" />
           <BasicInfo />
+          <ToptalBadge />
         </header>
 
         <div className={'appBody'}>
