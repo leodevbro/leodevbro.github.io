@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.54bb9d67.chunk.css",
-    "main.js": "/static/js/main.158f61ae.chunk.js",
-    "main.js.map": "/static/js/main.158f61ae.chunk.js.map",
+    "main.css": "/static/css/main.30e4b014.chunk.css",
+    "main.js": "/static/js/main.8a1c9a42.chunk.js",
+    "main.js.map": "/static/js/main.8a1c9a42.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -10,23 +10,23 @@
     "static/js/3.1f36ed0d.chunk.js": "/static/js/3.1f36ed0d.chunk.js",
     "static/js/3.1f36ed0d.chunk.js.map": "/static/js/3.1f36ed0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.54bb9d67.chunk.css.map": "/static/css/main.54bb9d67.chunk.css.map",
+    "static/css/main.30e4b014.chunk.css.map": "/static/css/main.30e4b014.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
     "static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg": "/static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
-    "static/media/git.f2daa3c8.svg": "/static/media/git.f2daa3c8.svg",
+    "static/media/git.86bd384f.svg": "/static/media/git.86bd384f.svg",
     "static/media/gtu.15edf003.png": "/static/media/gtu.15edf003.png",
     "static/media/jiffy-logo.0ecada9f.png": "/static/media/jiffy-logo.0ecada9f.png",
     "static/media/lingswap-icon.c104f7fc.png": "/static/media/lingswap-icon.c104f7fc.png",
-    "static/media/linkedin.c4edbd80.svg": "/static/media/linkedin.c4edbd80.svg",
-    "static/media/location.4e26f4a1.svg": "/static/media/location.4e26f4a1.svg",
+    "static/media/linkedin.279f1401.svg": "/static/media/linkedin.279f1401.svg",
+    "static/media/location.8b97270e.svg": "/static/media/location.8b97270e.svg",
     "static/media/lupi.789cf8df.png": "/static/media/lupi.789cf8df.png",
-    "static/media/mail.47d0083a.svg": "/static/media/mail.47d0083a.svg",
-    "static/media/mini-diary-icon.870466f3.png": "/static/media/mini-diary-icon.870466f3.png",
+    "static/media/mail.b604b14b.svg": "/static/media/mail.b604b14b.svg",
     "static/media/momentick-logo-small.f634fa4a.png": "/static/media/momentick-logo-small.f634fa4a.png",
     "static/media/re-soft-logo_2.8d824abe.png": "/static/media/re-soft-logo_2.8d824abe.png",
     "static/media/road-crossing.a05231a8.png": "/static/media/road-crossing.a05231a8.png",
+    "static/media/tealbook_logo.a45115b1.jpg": "/static/media/tealbook_logo.a45115b1.jpg",
     "static/media/tic-tac-toe.4418a710.png": "/static/media/tic-tac-toe.4418a710.png",
     "static/media/toptal-logo-vector.15d2cb16.svg": "/static/media/toptal-logo-vector.15d2cb16.svg",
     "static/media/trivia-i.431fdefb.png": "/static/media/trivia-i.431fdefb.png",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
-    "static/css/main.54bb9d67.chunk.css",
-    "static/js/main.158f61ae.chunk.js"
+    "static/css/main.30e4b014.chunk.css",
+    "static/js/main.8a1c9a42.chunk.js"
   ]
 }
