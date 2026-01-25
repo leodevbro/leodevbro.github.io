@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.30e4b014.chunk.css",
-    "main.js": "/static/js/main.8a1c9a42.chunk.js",
-    "main.js.map": "/static/js/main.8a1c9a42.chunk.js.map",
+    "main.js": "/static/js/main.ad528b94.chunk.js",
+    "main.js.map": "/static/js/main.ad528b94.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e3288ad.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e3288ad.js.map",
     "static/js/2.8189757b.chunk.js": "/static/js/2.8189757b.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/index.html",
     "static/css/main.30e4b014.chunk.css.map": "/static/css/main.30e4b014.chunk.css.map",
     "static/js/2.8189757b.chunk.js.LICENSE.txt": "/static/js/2.8189757b.chunk.js.LICENSE.txt",
-    "static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg": "/static/media/Levan Katsadze_pic_2023-07-25_e-small.f143aa31.jpg",
+    "static/media/Levan Katsadze_pic_2026-01_e-small.07bb7689.jpg": "/static/media/Levan Katsadze_pic_2026-01_e-small.07bb7689.jpg",
     "static/media/blockman-icon.92b966fc.png": "/static/media/blockman-icon.92b966fc.png",
     "static/media/blockman-react-icon.ed2c7cab.png": "/static/media/blockman-react-icon.ed2c7cab.png",
     "static/media/git.86bd384f.svg": "/static/media/git.86bd384f.svg",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.4e3288ad.js",
     "static/js/2.8189757b.chunk.js",
     "static/css/main.30e4b014.chunk.css",
-    "static/js/main.8a1c9a42.chunk.js"
+    "static/js/main.ad528b94.chunk.js"
   ]
 }
