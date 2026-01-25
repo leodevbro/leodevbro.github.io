@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 
 // import mainPhotoBuildPath from "./images/photo-leo.jpg";
-import mainPhoto2BuildPath from './images/Levan Katsadze_pic_2023-07-25_e-small.jpg';
+// import mainPhoto2BuildPath from './images/Levan Katsadze_pic_2023-07-25_e-small.jpg';
+import mainPhoto3BuildPath from './images/Levan Katsadze_pic_2026-01_e-small.jpg';
 import gtuCoatOfArmsBuildPath from './images/gtu.png';
 import ugLogoBuildPath from './images/ug.png';
 import lupiLogoBuildPath from './images/lupi.png';
@@ -806,7 +807,7 @@ function App() {
       </div>
       <div>
         <header className="header">
-          <img className={'img'} src={mainPhoto2BuildPath} alt="main" />
+          <img className={'img'} src={mainPhoto3BuildPath} alt="main" />
           <BasicInfo />
           <ToptalBadge />
         </header>
