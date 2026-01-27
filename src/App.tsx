@@ -20,10 +20,10 @@ import lingswapIconBuildPath from './images/lingswap-icon.png';
 import fireartIconBuildPath from './images/fireart-logo.png';
 import momentickIconBuildPath from './images/momentick-logo-small.png';
 import reSoftLogoBuildPath from './images/re-soft-logo_2.png';
-import miniDiaryIconBuildPath from './images/mini-diary-icon.png';
+// import miniDiaryIconBuildPath from './images/mini-diary-icon.png';
 // import around25IconPath from "./images/around25-logo.jpg";
 import triviaIconPath from './images/trivia-i.png';
-import toptalIconPath from './images/toptal-logo.png';
+// import toptalIconPath from './images/toptal-logo.png';
 import SteadyIQIconBuildPath from './images/siq-logo.png';
 import TealbookIconBuildPath from './images/tealbook_logo.jpg';
 // import calorieIconPath from './images/calories-icon.jpg';
@@ -232,6 +232,7 @@ const NanoItem: React.FC<{
   info2?: ReactNode;
   info3_stack?: ReactNode;
   info4_period?: ReactNode;
+  info5_podcasts?: ReactNode;
   showStat?: boolean;
   seLink?: string;
 }> = ({
@@ -242,6 +243,7 @@ const NanoItem: React.FC<{
   info1,
   info3_stack,
   info4_period,
+  info5_podcasts,
   mainLink,
   info2,
   showStat,
@@ -289,6 +291,7 @@ const NanoItem: React.FC<{
             </div>
           )}
           {info4_period && <div className={'nanoInfo2'}>{info4_period}</div>}
+          {info5_podcasts && <div className={'nanoInfo2'}>{info5_podcasts}</div>}
         </div>
       </div>
     );
@@ -364,6 +367,53 @@ const StoryBar = () => {
                 Github Repo
               </a>
             }
+            info5_podcasts={
+              <div className='podcasts' style={{marginTop: "6px"}}>
+                <div className='podWrapTitle'>Podcast Videos</div>
+
+                <div style={{paddingLeft: "20px"}}>
+                  <div className='onePodcast'>
+                    <span>With <span className='podEntity'>Microsoft</span>:</span>
+                    {" "}
+                    <a
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      href={'https://learn.microsoft.com/en-us/shows/open-at-microsoft/introduction-to-blockman-visual-helper-extension-for-vs-code'}
+                    >
+                      Official website
+                    </a>
+                    {" "}
+                    <a
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      href={'https://www.youtube.com/watch?v=y79Okx8oEao&list=PLlrxD0HtieHg8On6t1l5_kj--7PMmyfGi'}
+                    >
+                      YouTube
+                    </a>
+                  </div>
+
+                  <div className='onePodcast'>
+                    <span>With <span className='podEntity'>Top End Devs</span>:</span>
+                    {" "}
+                    <a
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      href={'https://topenddevs.com/podcasts/react-round-up/blockman-with-levan-katsadze-rru-218'}
+                    >
+                      Official website
+                    </a>
+                    {" "}
+                    <a
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      href={'https://www.youtube.com/watch?v=wkG_4pVslMg&list=PLJesql-aSfX6xaZcgQqmfIssYSaQVWXQF'}
+                    >
+                      YouTube
+                    </a>
+                  </div>
+                </div>
+              </div>
+            }
           />
 
           <NanoItem
@@ -378,7 +428,7 @@ const StoryBar = () => {
               </a>
             }
             seLink={'https://www.youtube.com/watch?v=KKU84ogffeM'}
-            info1={''}
+            info1={'Gmail Analysis Software'}
             mainLink={''}
             info2={
               "Many people have many thousands of mails in Gmail, and they want to find the most frequent senders to be able to quickly clean up mailbox. Gmail does not have such feature to sort senders by frequency. I created a special software and a video tutorial for it."
@@ -391,6 +441,33 @@ const StoryBar = () => {
               >
                 Github Repo
               </a>
+            }
+            info5_podcasts={
+              <div className='podcasts' style={{marginTop: "6px"}}>
+                <div className='podWrapTitle'>Podcast Video</div>
+
+                <div style={{paddingLeft: "20px"}}>
+                  <div className='onePodcast'>
+                    <span>With <span className='podEntity'>Top End Devs</span>:</span>
+                    {" "}
+                    <a
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      href={'https://topenddevs.com/podcasts/react-round-up/gmail-analysis-software-web-components-and-state-of-web-development-surveys-rru-260'}
+                    >
+                      Official website
+                    </a>
+                    {" "}
+                    <a
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      href={'https://www.youtube.com/watch?v=ES6vgfd6LGw'}
+                    >
+                      YouTube
+                    </a>
+                  </div>
+                </div>
+              </div>
             }
           />
 

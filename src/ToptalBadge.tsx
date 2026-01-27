@@ -29,7 +29,6 @@ export const ToptalBadge = () => {
           </svg>
           <a
             className="f"
-            target="_blank"
             href={toptalProfileUrl}
           >
             Hire me

@@ -459,3 +459,28 @@ body {
   // text-decoration: none;
   color: rgb(23, 73, 212);
 }
+
+.podcasts {
+  .podWrapTitle {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .onePodcast {
+    margin-bottom: 10px;
+
+    .podEntity {
+      font-weight: bold;
+      color: rgb(39, 96, 255);
+    }
+  }
+
+  a {
+    outline: 1px solid rgb(39, 96, 255);
+    color: rgb(39, 96, 255);
+    border-radius: 3px;
+    padding: 1px 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
